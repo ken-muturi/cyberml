@@ -1,0 +1,2153 @@
+: 1474850997:0;sudo apt install git
+: 1474850997:0;sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+: 1474850997:0;exit
+: 1474850643:0;ls
+: 1474850935:0;ls -al
+: 1474850941:0;nano .zshrc
+: 1474850997:0;exit
+: 1474851009:0;sudo apt install fonts-powerline
+: 1474851016:0;exit
+: 1474851033:0;cd .oh-my-zsh
+: 1474851038:0;cd 
+: 1474851040:0;clear
+: 1474851367:0;sudo add-apt-repository ppa:caffeine-developers/ppa
+: 1474851424:0;sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
+: 1474851437:0;echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
+: 1474851484:0;wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
+: 1474851496:0;sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+: 1474851666:0;sudo dpkg --add-architecture i386
+: 1474851675:0;sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
+: 1474851743:0;wget -qO - http://download.alephobjects.com/ao/aodeb/aokey.pub | sudo apt-key add -
+: 1474851758:0;sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak && sudo sed -i '$a deb http://download.alephobjects.com/ao/aodeb wheezy main' /etc/apt/sources.list
+: 1474851817:0;sudo apt install gimp inkscape indicator-multiload caffeine spotify-client google-chrome-stable skype vlc browser-plugin-vlc cura arduino arduino-core filezilla virtualbox
+: 1474851827:0;sudo apt update
+: 1474851856:0;exit
+: 1474853034:0;sudo apt install steam
+: 1474853220:0;sudo reboot
+: 1474853328:0;exit
+: 1474853356:0;sudo apt update && sudo apt upgrade && sudo apt autoremove
+: 1474853362:0;ls
+: 1474853365:0;ls -al
+: 1474853403:0;rm examples.desktop
+: 1474853466:0;exit
+: 1474899167:0;sudo apt install amixer laptop-mode-tools 
+: 1474899203:0;sudo apt install laptop-mode-tools 
+: 1474899234:0;sudo apt install xbacklight
+: 1474899324:0;sudo apt search amixer
+: 1474899344:0;exit
+: 1474899954:0;cd Downloads
+: 1474899956:0;tar zxvf backlight-driver.tar.gz
+: 1474899964:0;cd chromebook_keyboard_backlight_driver
+: 1474899967:0;make
+: 1474899999:0;sudo cp chromeos_keyboard_leds.ko chromebook_kb_backlight.ko /lib/modules/`uname -r`/kernel/drivers/platform/chrome/
+: 1474900011:0;sudo depmod -a
+: 1474900025:0;sudo insmod chromeos_keyboard_leds
+: 1474900071:0;cd /lib/modules/`uname -r`/kernel/drivers/platform/chrome/
+: 1474900072:0;ls
+: 1474900085:0;sudo insmod chromeos_keyboard_leds.ko
+: 1474900096:0;sudo insmod chromebook_kb_backlight.ko
+: 1474900103:0;cd
+: 1474900104:0;clear
+: 1474900150:0;cd Downloads/chromebook_keyboard_backlight_driver
+: 1474900161:0;sudo cp keyboard_brightness /usr/local/bin
+: 1474900167:0;sudo chmod u+s /usr/local/bin/keyboard_brightness
+: 1474900184:0;exit
+: 1474905129:0;nano .zshenv
+: 1474905171:0;exit
+: 1474905176:0;fix
+: 1474905184:0;exit
+: 1474905632:0;sudo apt install dropbox
+: 1474905649:0;sudo apt search dropbox
+: 1474905690:0;clear
+: 1474906403:0;exit
+: 1474927805:0;fix
+: 1474927813:0;nano .zshrc
+: 1474928166:0;nano .zshenv
+: 1474928288:0;exit
+: 1474928299:0;nano .zshenv
+: 1474928307:0;exit
+: 1474928314:0;sudo -s
+: 1474928339:0;exit
+: 1474928363:0;nano .zshenv
+: 1474928406:0;exit
+: 1474928423:0;up
+: 1474928468:0;cd /etc/sources
+: 1474928472:0;cd /etc
+: 1474928472:0;ls
+: 1474928476:0;cd apt
+: 1474928478:0;ls
+: 1474928485:0;cd sources.list.d
+: 1474928486:0;ls
+: 1474928523:0;sudo rm -f caffeine-developers-ubuntu-ppa-xenial.list
+: 1474928525:0;sudo rm -f caffeine-developers-ubuntu-ppa-xenial.list.save
+: 1474928527:0;ls
+: 1474928534:0;cd
+: 1474928536:0;clear
+: 1474928541:0;up
+: 1474983607:0;fix
+: 1475012008:0;sudo apt install default-jdk
+: 1475012397:0;exit
+: 1475012472:0;sudo apt install icedtea-plugin
+: 1475012508:0;mkdir ~/.mozilla/plugins
+: 1475012524:0;rmdir ~/.mozilla/plugins
+: 1475012527:0;exit
+: 1475018567:0;fix
+: 1475018577:0;exit
+: 1475097547:0;fix
+: 1475097552:0;exit
+: 1475119792:0;fix
+: 1475119798:0;exit
+: 1475119826:0;fix
+: 1475123339:0;exit
+: 1475775261:0;fix
+: 1475775269:0;byes
+: 1475775279:0;nano .zshrc
+: 1475775294:0;byes
+: 1475775296:0;exit
+: 1475780760:0;fix
+: 1475780765:0;byes
+: 1475801589:0;tar xjvf lplinux.tar.bz2
+: 1475801635:0;cd lplinux
+: 1475801644:0;./install_lastpass.sh
+: 1475801720:0;exit
+: 1475808935:0;xbacklight dec -10
+: 1475808940:0;xbacklight dec 10
+: 1475808950:0;xbacklight -dec 10
+: 1475855400:0;fix
+: 1475855405:0;byes
+: 1475861429:0;fix
+: 1475861436:0;byes
+: 1475863135:0;pwns
+: 1475863140:0;pwnz
+: 1475863146:0;alias --help
+: 1475863170:0;clear
+: 1475863180:0;pwned cit-admin@10.5.5.54
+: 1475864265:0;byes
+: 1475875543:0;pwned cit-admin@10.5.5.54
+: 1475875628:0;byes
+: 1475893032:0;104.131.0.86
+: 1475893045:0;pwnd 104.131.0.86
+: 1475893049:0;pwned 104.131.0.86
+: 1475893058:0;clear
+: 1475893066:0;pwned freebsd@104.131.0.86
+: 1475894837:0;clear
+: 1475894857:0;pwned freebsd@104.131.0.86
+: 1475895340:0;exit
+: 1475937621:0;pwned freebsd@104.131.0.86
+: 1475938356:0;ee
+: 1475938359:0;exit
+: 1475943002:0;fix
+: 1475943012:0;byes
+: 1475948885:0;exit
+: 1475949172:0;touch hello_dale.txt
+: 1475949179:0;nano hello_dale.txt
+: 1475949239:0;exit
+: 1475949862:0;pwned freebsd@104.131.0.86
+: 1475950522:0;pwned 10.5.5.54
+: 1475950543:0;pwned cit-admin@10.5.5.54
+: 1475951666:0;clear
+: 1475951717:0;pwned cit-admin@10.5.5.54
+: 1475951724:0;pwned freebsd@104.131.0.86
+: 1475952544:0;exit
+: 1475957896:0;fix
+: 1475957900:0;exit
+: 1475982846:0;cd Downloads
+: 1475982854:0;ls
+: 1475982858:0;ll
+: 1475982988:0;chmod u+x Minecraft.jar
+: 1476025202:0;fix
+: 1476025214:0;exit
+: 1476031175:0;cd Downloads
+: 1476031177:0;ls
+: 1476031193:0;nano pia-v65-installer.sh
+: 1476031228:0;./pia-v65-installer.sh
+: 1476031265:0;byes
+: 1476036451:0;sudo apt install minetest
+: 1476071724:0;up
+: 1476071868:0;exit
+: 1476126792:0;fix
+: 1476126800:0;exit
+: 1476195196:0;up
+: 1476200049:0;byes
+: 1476327752:0;nano .zshrc
+: 1476327763:0;ll
+: 1476327767:0;ls -al
+: 1476327775:0;nano .zshenv
+: 1476327790:0;exit
+: 1476327794:0;up
+: 1476375577:0;sudo apt update
+: 1476375618:0;sudo apt dist-upgrade
+: 1476375802:0;sudo apt autoremove
+: 1476375807:0;exit
+: 1476382331:0;fix
+: 1476382336:0;exit
+: 1476384309:0;fix
+: 1476384316:0;exit
+: 1476385213:0;ping google.com
+: 1476385230:0;exit
+: 1476386203:0;sudo apt update
+: 1476386232:0;sudo apt dist-upgrade
+: 1476386238:0;exit
+: 1476386304:0;sudo do-release-upgrade
+: 1476386467:0;update-manager
+: 1476386510:0;update-manager -d
+: 1476387815:0;exit
+: 1476468010:0;fix
+: 1476468014:0;exit
+: 1476468522:0;ping google.com
+: 1476468538:0;tracert
+: 1476468550:0;traceroute
+: 1476468567:0;netcvat
+: 1476468571:0;netcat
+: 1476468576:0;exit
+: 1476471387:0;fix
+: 1476471391:0;exit
+: 1476472243:0;ping google.com
+: 1476472247:0;exit
+: 1476475582:0;ping google.com
+: 1476475586:0;exit
+: 1476475592:0;sudo apt update
+: 1476475615:0;exit
+: 1476475635:0;pwned cit-admin@10.5.5.54
+: 1476475765:0;byes
+: 1476478549:0;pwned cit-admin@10.5.5.54
+: 1476542425:0;cd Projects
+: 1476542425:0;ls
+: 1476542436:0;cd battlebot
+: 1476542436:0;ls
+: 1476542439:0;cd ,,
+: 1476542441:0;cd ..
+: 1476542449:0;rm -rf battlebot
+: 1476542457:0;rm -rf piracer
+: 1476542463:0;git clone https://DoSpace@bitbucket.org/DoSpace/dsis.git
+: 1476542535:0;cd dsis
+: 1476542536:0;ls
+: 1476542549:0;ls -al
+: 1476542604:0;cd assets
+: 1476542605:0;ls
+: 1476542610:0;cd ..
+: 1476542614:0;mkdir home
+: 1476542624:0;mv home.js home/
+: 1476542632:0;mv handler.php home/
+: 1476542643:0;mv styles.css home/
+: 1476542650:0;mv themap.html home/
+: 1476542653:0;ls -al
+: 1476542660:0;mv dashboard.php home/
+: 1476542668:0;rm -rf php.ini
+: 1476542681:0;nano old_index.html
+: 1476542698:0;rm old_index.html
+: 1476542712:0;ls -al
+: 1476543662:0;git add .
+: 1476543681:0;git commit -m 'Reorganization of home-page files'
+: 1476543686:0;git push origin master
+: 1476543697:0;ls -al
+: 1476543960:0;touch .gitignore
+: 1476544010:0;git rm -r --cache
+: 1476544016:0;git rm -r --cached
+: 1476544037:0;git rm -r --cached .
+: 1476544045:0;git add .
+: 1476544050:0;git status
+: 1476544062:0;clear
+: 1476544104:0;git commit -m 'added gitignore & removed dokuwiki and files/*'
+: 1476544119:0;clear
+: 1476544121:0;ls -al
+: 1476544134:0;git push origin master
+: 1476544209:0;cd ..
+: 1476544212:0;rm -rf dsis
+: 1476544214:0;exit
+: 1476568478:0;up
+: 1476568545:0;exit
+: 1476568560:0;pwned cit-admin@10.5.5.54
+: 1476569683:0;exit
+: 1476573741:0;pwned cit-admin@10.5.5.54
+: 1476577723:0;apt search wkhtml
+: 1476577754:0;apt search xvfb
+: 1476578187:0;clear
+: 1476578189:0;pwned cit-admin@10.5.5.54
+: 1476580333:0;clear
+: 1476580390:0;pwned cit-admin@10.5.5.54
+: 1476580502:0;exi
+: 1476580504:0;byes
+: 1476677080:0;fox
+: 1476677083:0;fix
+: 1476677097:0;byes
+: 1476687490:0;up
+: 1476687542:0;apt search tux
+: 1476687576:0;sudo apt install supertux supertuxcart
+: 1476687583:0;sudo apt install supertux supertuxkart
+: 1476687980:0;byes
+: 1476721162:0;sudo apt install slack
+: 1476721177:0;slack
+: 1476721187:0;sudo apt remove slack 
+: 1476721195:0;sudo apt purge slack 
+: 1476721203:0;exit
+: 1476722538:0;sudo apt update
+: 1476722588:0;byes
+: 1476722713:0;fix
+: 1476722717:0;byes
+: 1476723077:0;ping google.com
+: 1476723100:0;fix
+: 1476723112:0;clear
+: 1476723116:0;up
+: 1476723293:0;byes
+: 1476742604:0;exit
+: 1476748834:0;ssh josbow17@getchispa.com
+: 1476748861:0;ssh josbow14@getchispa.com
+: 1476750520:0;cat ~/.ssh/id_rsa.pub
+: 1476750582:0;ssh-keygen -t rsa -C "mr.josh.bowen@gmail.com"
+: 1476750600:0;cat ~/.ssh/id_rsa.pub
+: 1476750965:0;byes
+: 1476750970:0;exit
+: 1476766784:0;sudo apt update && sudo apt dist-upgrade
+: 1476769443:0;byes
+: 1476773756:0;sudo cp chromeos_keyboard_leds.ko chromebook_kb_backlight.ko /lib/modules/`uname -r`/kernel/drivers/platform/chrome/
+: 1476773775:0;sudo depmod -a
+: 1476773788:0;sudo insmod chromeos_keyboard_leds.ko
+: 1476773799:0;sudo insmod chromebook_kb_backlight.ko
+: 1476773817:0;sudo cp keyboard_brightness /usr/local/bin
+: 1476773828:0;sudo chmod u+s /usr/local/bin/keyboard_brightness
+: 1476773833:0;byes
+: 1476773991:0;cd /usr/local/bin
+: 1476773992:0;ls
+: 1476773997:0;ls -al
+: 1476774031:0;chmod u-w keyboard
+: 1476774040:0;chmod u-w keyboard_brightness
+: 1476774047:0;sudo chmod u-w keyboard_brightness
+: 1476774057:0;ls -al
+: 1476774087:0;keyboard_brightness down
+: 1476774092:0;sudo keyboard_brightness down
+: 1476774177:0;sudo chmod g+s /usr/local/bin/keyboard_brightness
+: 1476774181:0;ls -al
+: 1476774207:0;sudo chmod g-s /usr/local/bin/keyboard_brightness
+: 1476774210:0;ls -al
+: 1476806886:0;up
+: 1476806910:0;exit
+: 1476842529:0;up
+: 1476842533:0;fix
+: 1476842540:0;byes
+: 1476893501:0;fix
+: 1476893504:0;byes
+: 1476907219:0;pwned josbow14@getchispa.com
+: 1476972958:0;up
+: 1476973216:0;byes
+: 1476997270:0;fix
+: 1476997275:0;exit
+: 1476997413:0;ping test.getchispa.com
+: 1476997432:0;byes
+: 1477010196:0;up
+: 1477010279:0;byes
+: 1477057489:0;pwned josbow14@getchispa.com
+: 1477057767:0;byes
+: 1477071733:0;up
+: 1477071778:0;byes
+: 1477073993:0;pwned cit-admin@10.5.5.54
+: 1477083768:0;byes
+: 1477159040:0;up
+: 1477159251:0;clear
+: 1477164138:0;pwned cit-admin@10.5.5.54
+: 1477164480:0;exit
+: 1477196254:0;fix
+: 1477196260:0;byes
+: 1477286496:0;fix
+: 1477286506:0;byes
+: 1477318392:0;sudo apt install gcolor2
+: 1477318405:0;byes
+: 1477345923:0;fix
+: 1477345931:0;byes
+: 1477403532:0;fix
+: 1477403537:0;exit
+: 1477403621:0;pwned josbow14@getchispa.com
+: 1477404276:0;exit
+: 1477409619:0;up
+: 1477434539:0;fix
+: 1477434549:0;byes
+: 1477434844:0;up
+: 1477434883:0;byes
+: 1477519501:0;fix
+: 1477519507:0;clear
+: 1477527277:0;up
+: 1477579035:0;pwned josbow14@getchispa.com
+: 1477579116:0;byes
+: 1477579397:0;pwned josbow14@getchispa.com
+: 1477579467:0;byes
+: 1477584142:0;sudo apt install adb
+: 1477584282:0;byes
+: 1477596026:0;cat id-rsa.pub
+: 1477596032:0;cat id_rsa.pub
+: 1477596038:0;cd .ssh
+: 1477596039:0;ls
+: 1477596045:0;clear
+: 1477596050:0;cat id_rsa.pub
+: 1477596140:0;cd
+: 1477596141:0;clear
+: 1477596169:0;pwned 104.236.135.19
+: 1477596192:0;pwned vulpix@104.236.135.19
+: 1477596203:0;clear
+: 1477596209:0;pwned root@104.236.135.19
+: 1477596970:0;byes
+: 1477667460:0;fix
+: 1477667465:0;byes
+: 1477677109:0;apt search obdc
+: 1477677126:0;apt search libmyobdc
+: 1477677142:0;apt searchobdc
+: 1477677145:0;apt search obdc
+: 1477677150:0;apt search odbc
+: 1477677453:0;sudo apt install libiodbc2 unixodbc php7.0-odbc
+: 1477677487:0;byes
+: 1477677505:0;pwned cit-admin@10.5.5.54
+: 1477677555:0;up
+: 1477677896:0;clear
+: 1477677899:0;byes
+: 1477677909:0;nano .zshrc
+: 1477677922:0;nano .zshenv
+: 1477677997:0;cat .zshenv
+: 1477678023:0;byes
+: 1477678044:0;exit
+: 1477687495:0;cd Documents/DoSpace
+: 1477687496:0;ls
+: 1477687504:0;wine
+: 1477687514:0;sudo apt install wine
+: 1477687651:0;pwned cit-admin@10.5.5.54
+: 1477687691:0;vncciewer
+: 1477687693:0;vnc
+: 1477687706:0;exit
+: 1477687719:0;./vncviewer
+: 1477687723:0;sudo ./vncviewer
+: 1477687772:0;vnc
+: 1477687779:0;apt search real vnc
+: 1477687795:0;byes
+: 1477688165:0;wine
+: 1477688302:0;ls
+: 1477688327:0;mv 'Five Nines LabTech.rdp' labtech.rdp
+: 1477688327:0;ls
+: 1477688333:0;wine labtech.rdp
+: 1477762464:0;pwned cit-admin@10.5.5.54
+: 1477769711:0;byes
+: 1477774192:0;pwned cit-admin@10.5.5.54
+: 1477776211:0;byes
+: 1477795723:0;fix
+: 1477795728:0;exit
+: 1477804695:0;fix
+: 1477804703:0;exit
+: 1477840507:0;byes
+: 1477880968:0;fix
+: 1477880975:0;byes
+: 1477923928:0;fix
+: 1477923931:0;clear
+: 1477923934:0;up
+: 1477924004:0;byes
+: 1477963871:0;fix
+: 1477963884:0;up
+: 1477964003:0;byes
+: 1478011685:0;up
+: 1478011822:0;exit
+: 1478035455:0;up
+: 1478035555:0;byes
+: 1478043331:0;pwned cit-admin@10.5.5.54
+: 1478047291:0;exit
+: 1478047786:0;git clone https://DoSpace@bitbucket.org/DoSpace/dsis.git
+: 1478047813:0;cd dsis
+: 1478047815:0;cd forms
+: 1478047816:0;ls
+: 1478047826:0;cd
+: 1478047829:0;rm -rf dsis
+: 1478047831:0;exit
+: 1478098188:0;up
+: 1478098278:0;byes
+: 1478109430:0;sudo apt install audacity
+: 1478109467:0;exit
+: 1478216764:0;up
+: 1478216885:0;byes
+: 1478277538:0;up
+: 1478277577:0;byes
+: 1478295459:0;fix
+: 1478295463:0;byes
+: 1478295606:0;pwned cit-admin@10.5.5.54
+: 1478298804:0;byes
+: 1478301247:0;pwned cit-admin@10.5.5.54
+: 1478302340:0;clear
+: 1478302341:0;pwned cit-admin@10.5.5.54
+: 1478302855:0;cat ~/.ssh/id_rsa.pub
+: 1478302882:0;exit
+: 1478303084:0;nano github_token
+: 1478303090:0;exit
+: 1478303737:0;pwned cit-admin@10.5.5.54
+: 1478304976:0;byes
+: 1478306278:0;pwned cit-admin@10.5.5.54
+: 1478308262:0;byes
+: 1478308783:0;pwned cit-admin@10.5.5.54
+: 1478309210:0;exit
+: 1478448792:0;fix
+: 1478455840:0;up
+: 1478455898:0;byes
+: 1478457068:0;ls
+: 1478457086:0;rm -rf github_token
+: 1478457094:0;byes
+: 1478459783:0;up
+: 1478459800:0;fix
+: 1478459804:0;exit
+: 1478560511:0;up
+: 1478560550:0;exiut
+: 1478560552:0;exit
+: 1478617756:0;up
+: 1478617792:0;exit
+: 1478637653:0;vim
+: 1478637657:0;vi
+: 1478637710:0;exit
+: 1478638273:0;up
+: 1478638437:0;pwned josbow14@getchispa.com
+: 1478639104:0;byes
+: 1478646291:0;fix
+: 1478646300:0;byes
+: 1478652123:0;pwned josbow14@getchispa.com
+: 1478652151:0;exit
+: 1478653492:0;pwned josbow14@getchispa.com
+: 1478653519:0;ping getchispa.com
+: 1478656732:0;pwned josbow14@getchispa.com
+: 1478657170:0;byes
+: 1478657191:0;pwned josbow14@getchispa.com
+: 1478657247:0;exit
+: 1478657350:0;touch log_sample.txt
+: 1478657356:0;nano log_sample.txt
+: 1478657362:0;exit
+: 1478659487:0;fix
+: 1478659492:0;byes
+: 1478666805:0;ruby
+: 1478666901:0;rvm
+: 1478666905:0;ruby -h
+: 1478666909:0;byes
+: 1478666915:0;python
+: 1478666945:0;python3
+: 1478666993:0;gcc
+: 1478667006:0;ls
+: 1478667009:0;ll
+: 1478667014:0;byes
+: 1478667566:0;ls
+: 1478667569:0;cd Projects
+: 1478667570:0;ls
+: 1478667577:0;cd bizget
+: 1478667578:0;ls
+: 1478667579:0;cd
+: 1478667646:0;cd Projects/bizget
+: 1478667652:0;git remote -v
+: 1478667664:0;cd ../..
+: 1478668587:0;env
+: 1478668597:0;clear
+: 1478668599:0;ls
+: 1478668639:0;exit
+: 1478671143:0;ls
+: 1478671148:0;cd projects
+: 1478671171:0;cd Projects
+: 1478671173:0;ls
+: 1478671182:0;cd mysetup
+: 1478671182:0;ls
+: 1478671187:0;nano mysetup.sh
+: 1478671434:0;gcolor
+: 1478671440:0;gcolor2
+: 1478671467:0;git add .
+: 1478671476:0;git commit -m 'Updated software list'
+: 1478671477:0;git push
+: 1478671502:0;cd ..
+: 1478671503:0;ls
+: 1478671505:0;clear
+: 1478672706:0;wget https://www.nano-editor.org/dist/v2.7/nano-2.7.1.tar.gz
+: 1478672758:0;ls
+: 1478672833:0;tar -xzvf nano-2.7.1.tar.gz
+: 1478672836:0;ls
+: 1478672843:0;rm nano-2.7.1.tar.gz
+: 1478672892:0;mv nano-2.7.1
+: 1478672897:0;mv nano-2.7.1 nano
+: 1478675485:0;ls
+: 1478675487:0;cd nano
+: 1478675488:0;ls
+: 1478675689:0;cd ..
+: 1478675698:0;rm -rf nano
+: 1478675700:0;ls
+: 1478675704:0;clear
+: 1478676254:0;ls
+: 1478676255:0;cd ..
+: 1478676256:0;ls
+: 1478676260:0;exit
+: 1478701312:0;fix
+: 1478701335:0;byes
+: 1478701400:0;sudo cp chromeos_keyboard_leds.ko chromebook_kb_backlight.ko /lib/modules/`uname -r`/kernel/drivers/platform/chrome/
+: 1478701427:0;sudo depmod -a
+: 1478701457:0;sudo insmod chromeos_keyboard_leds
+: 1478701460:0;sudo insmod chromeos_keyboard_leds.ko
+: 1478701478:0;sudo insmod chromebook_kb_backlight.ko
+: 1478701505:0;sudo cp keyboard_brightness /usr/local/bin
+: 1478701527:0;sudo chmod u+s /usr/local/bin/keyboard_brightness
+: 1478701561:0;keyboard_brightness
+: 1478701574:0;cd /usr/local/bin
+: 1478701575:0;ls
+: 1478701578:0;ll
+: 1478701741:0;keyboard_brightness
+: 1478701746:0;sudo keyboard_brightness
+: 1478701757:0;sudo keyboard_brightness up
+: 1478701771:0;sudo keyboard_brightness down
+: 1478701787:0;sudo keyboard_brightness up
+: 1478701794:0;sudo keyboard_brightness down
+: 1478701798:0;exit
+: 1478714097:0;fix
+: 1478714101:0;up
+: 1478716868:0;byes
+: 1478728890:0;fix
+: 1478728905:0;exit
+: 1478789691:0;up
+: 1478790026:0;byes
+: 1478808295:0;cd Projects/hvac-model
+: 1478808296:0;ls
+: 1478808297:0;ln
+: 1478808301:0;ln --help
+: 1478808323:0;ln -s '/home/josh/sketchbook/hvac_trinket' 
+: 1478808325:0;ls
+: 1478808330:0;cd hvac_trinket
+: 1478808332:0;ls
+: 1478808335:0;cd ..
+: 1478808349:0;ls
+: 1478808353:0;ls -al
+: 1478808363:0;rm -rf hvac_trinket
+: 1478808371:0;ln -s '/home/josh/sketchbook/hvac-src' 
+: 1478808374:0;ls
+: 1478808378:0;cd hvac-src
+: 1478808378:0;ls
+: 1478808380:0;cd ..
+: 1478808381:0;ls
+: 1478808383:0;clear
+: 1478808389:0;nano README
+: 1478808593:0;git add .
+: 1478808597:0;git init
+: 1478808600:0;git add .
+: 1478808603:0;git status
+: 1478808615:0;git remove
+: 1478808623:0;ls -al
+: 1478808630:0;rm -rf .git
+: 1478808632:0;clear
+: 1478808641:0;ls
+: 1478808683:0;git add .
+: 1478808686:0;git init
+: 1478808688:0;git add .
+: 1478808699:0;git commit -m 'First commit'
+: 1478808829:0;git remote add origin git@github.com:Skraelingjar/hvac-model.git
+: 1478808837:0;git push -u origin master
+: 1478808842:0;ls
+: 1478808877:0;byes
+: 1478809239:0;wget 'https://cdn-learn.adafruit.com/assets/assets/000/025/646/original/adafruit_products_pro5.png?1432753967'
+: 1478809240:0;ls
+: 1478809259:0;mv adafruit_products_pro5.png?1432753967 pinout.png
+: 1478809262:0;ls
+: 1478809325:0;cd Projects/hvac-model
+: 1478809326:0;ls
+: 1478809328:0;git add .
+: 1478809339:0;git commit -m 'Added pinout image'
+: 1478809342:0;git push
+: 1478809356:0;git config --global push.default simple
+: 1478809358:0;clear
+: 1478809359:0;ll
+: 1478809364:0;git status
+: 1478809560:0;ls
+: 1478809570:0;rm hvac-trinket.ino
+: 1478809577:0;rm hvac_trinket.ino
+: 1478809584:0;cd hvac_trinket
+: 1478809584:0;ls
+: 1478809587:0;cd ..
+: 1478809590:0;git add .
+: 1478809611:0;git commit -m 'Moved into folder for arduino IDE'
+: 1478809923:0;byes
+: 1478810344:0;sudo apt purge arduino
+: 1478810378:0;\
+wget http://adafruit-download.s3.amazonaws.com/trinket-arduino-1.0.5-linux64.tgz
+: 1478810407:0;tar xvfz trinket-arduino-1.0.5-linux64.tgz
+: 1478810429:0;wget https://github.com/adafruit/Trinket_Arduino_Linux/raw/master/adafruit-trinket.rules
+: 1478810460:0;wget https://github.com/adafruit/Trinket_Arduino_Linux/raw/master/99-adafruit-boards.rules
+: 1478810483:0;sudo cp 99-adafruit-boards.rules /etc/udev/rules.d/
+: 1478810490:0;sudo reload udev
+: 1478810502:0;exit
+: 1478810538:0;cd /etc/udev/rules.d/
+: 1478810539:0;ls
+: 1478810543:0;rm -rf *
+: 1478810549:0;ll
+: 1478810552:0;rm -rf *
+: 1478810553:0;ll
+: 1478810574:0;sudo rm -rf 99-adafruit-boards.rules
+: 1478810587:0;ls
+: 1478810587:0;ll
+: 1478810591:0;exit
+: 1478810615:0;apt search arduino
+: 1478810671:0;sudo apt install arduino arduino-mk
+: 1478810729:0;exit
+: 1478811023:0;mv avrdude.conf avrdude.conf.old
+: 1478811027:0;sudo mv avrdude.conf avrdude.conf.old
+: 1478811046:0;mv '/home/josh/Downloads/avrdude.conf'
+: 1478811052:0;mv '/home/josh/Downloads/avrdude.conf' /etc/
+: 1478811056:0;sudo mv '/home/josh/Downloads/avrdude.conf' /etc/
+: 1478811065:0;exit
+: 1478811372:0;cd /usr/share/arduino/hardware/tools/
+: 1478811374:0;ls
+: 1478811377:0;ll
+: 1478811387:0;nano avrdude.conf
+: 1478811400:0;sudo gedit avrdude.conf
+: 1478811532:0;cd
+: 1478811539:0;wget https://github.com/adafruit/Trinket_Arduino_Linux/raw/master/99-adafruit-boards.rules
+: 1478811548:0;sudo cp 99-adafruit-boards.rules /etc/udev/rules.d/
+: 1478811556:0;sudo reload udev
+: 1478811566:0;sudo udevadm control --reload-rules
+: 1478811574:0;sudo udevadm trigger
+: 1478811582:0;exit
+: 1478812204:0;sudo apt purge arduino arduino-mk
+: 1478812233:0;cd Downloads
+: 1478812233:0;ls
+: 1478812357:0;ll
+: 1478812375:0;tar -xzvf adafruit-arduino-1.6.4-linux64.tar.xz
+: 1478812440:0;tar -xf adafruit-arduino-1.6.4-linux64.tar.xz
+: 1478812459:0;ls
+: 1478812467:0;rm -rf adafruit-arduino-1.6.4-linux64.tar.xz
+: 1478812468:0;ls
+: 1478812483:0;mv arduino-1.6.4 ~/
+: 1478812491:0;cd
+: 1478812492:0;ls
+: 1478812500:0;cd arduino-1.6.4
+: 1478812501:0;ls
+: 1478812506:0;cd arduino
+: 1478812509:0;arduino
+: 1478812512:0;./arduino
+: 1478812556:0;ll
+: 1478812574:0;./arduino
+: 1478812647:0;exit
+: 1478812692:0;./arduino
+: 1478812764:0;./arduino &
+: 1478812774:0;exit
+: 1478812787:0;ls
+: 1478812805:0;rm 99-adafruit-boards.rules
+: 1478812824:0;arduino-1.6.4/arduino &
+: 1478812847:0;aide
+: 1478812852:0;arduino
+: 1478812858:0;clear
+: 1478812863:0;nano .zshenv
+: 1478812922:0;exit
+: 1478812926:0;arduino
+: 1478815149:0;exit
+: 1478827957:0;cd Projects/hvac-model
+: 1478827961:0;git add .
+: 1478827975:0;ls
+: 1478827983:0;cd hvac_trinket
+: 1478827984:0;ls
+: 1478827990:0;nano hvac_trinket.ino
+: 1478828015:0;byes
+: 1478828018:0;git commit -m 'Updated specs'
+: 1478828020:0;git push
+: 1478828024:0;byes
+: 1478878136:0;up
+: 1478879362:0;arduino
+: 1478879377:0;byes
+: 1478882414:0;ll
+: 1478882422:0;cd projects
+: 1478882426:0;cd Projects
+: 1478882471:0;ls
+: 1478882585:0;git@github.com:dospace/dsis.git
+: 1478882593:0;git clone git@github.com:dospace/dsis.git
+: 1478882644:0;ls
+: 1478882646:0;cd dsis
+: 1478882648:0;ls
+: 1478882661:0;clear
+: 1478882663:0;ll
+: 1478882685:0;byes
+: 1478882696:0;ll
+: 1478882754:0;php -S localhost:8000
+: 1478882768:0;sudo apt install php7.0-cli
+: 1478882781:0;ls
+: 1478882809:0;php -S localhost:8000
+: 1478883043:0;cd tickets
+: 1478883044:0;ls
+: 1478883050:0;cd tickets
+: 1478883051:0;ls
+: 1478883088:0;cd assets
+: 1478883088:0;ls
+: 1478883093:0;cd ..
+: 1478883366:0;cd ../forms
+: 1478883367:0;ls
+: 1478883371:0;cd ..
+: 1478883380:0;ls home/
+: 1478883386:0;ls data/
+: 1478884323:0;cd ..
+: 1478884694:0;nano router.php
+: 1478884729:0;php -S localhost:8000 router.php
+: 1478884751:0;nano router.php
+: 1478884775:0;php -S localhost:8000 router.php
+: 1478884876:0;bye
+: 1478884880:0;byes
+: 1478905902:0;fix
+: 1478905907:0;byes
+: 1478906335:0;pwned minecraft.dospace.org
+: 1478906348:0;pwned minecraft@minecraft.dospace.org
+: 1478907426:0;byes
+: 1478907823:0;pwned minecraft@minecraft.dospace.org
+: 1478979299:0;up
+: 1478979311:0;byes
+: 1479061959:0;up
+: 1479137856:0;byes
+: 1479157292:0;up
+: 1479157310:0;byes
+: 1479164165:0;fix
+: 1479164174:0;byes
+: 1479164250:0;fix
+: 1479164255:0;byes
+: 1479164311:0;arduino
+: 1479166904:0;cd
+: 1479166909:0;cd Projects
+: 1479166909:0;ls
+: 1479166913:0;cd hvac-model
+: 1479166916:0;ls
+: 1479166921:0;git add .
+: 1479166935:0;git commit -m 'Now relys on serial imput to move'
+: 1479166937:0;git push
+: 1479171989:0;git add .
+: 1479172069:0;git commit -m 'Added conrols based on L293D'
+: 1479172072:0;git push
+: 1479172607:0;clear
+: 1479172608:0;ls
+: 1479172766:0;sudo apt install fritzing
+: 1479173751:0;ls
+: 1479173793:0;git add .
+: 1479173799:0;git commit -m
+: 1479173809:0;git commit -m 'Added fritzing layout'
+: 1479173811:0;git push
+: 1479173817:0;exit
+: 1479218823:0;sudo <( wget -O - https://code.headmelted.com/installers/apt.sh )
+: 1479218891:0;sudo -s
+: 1479218914:0;. <( wget -O - https://code.headmelted.com/installers/apt.sh )
+: 1479219008:0;exit
+: 1479234652:0;up
+: 1479234667:0;cd Projects
+: 1479234667:0;ls
+: 1479234673:0;cd hvac-model
+: 1479234674:0;ls
+: 1479234678:0;cd hvac_trinket
+: 1479234679:0;ls
+: 1479234685:0;nano hvac_trinket.ino
+: 1479234693:0;cd
+: 1479234756:0;byes
+: 1479242816:0;up
+: 1479242846:0;byes
+: 1479266432:0;fix
+: 1479266437:0;byes
+: 1479314808:0;up
+: 1479314836:0;byes
+: 1479339035:0;up
+: 1479339061:0;byes
+: 1479354595:0;rvm
+: 1479354597:0;ruby
+: 1479354605:0;ruby version
+: 1479354609:0;ruby --version
+: 1479354618:0;clear
+: 1479357361:0;byes
+: 1479395737:0;up
+: 1479396017:0;arduino
+: 1479396262:0;byes
+: 1479397469:0;arduino
+: 1479402556:0;cd 
+: 1479402557:0;ls
+: 1479402562:0;cd Projects
+: 1479402564:0;ls
+: 1479402567:0;cd hvac-model
+: 1479402574:0;ls
+: 1479402581:0;nano TO-DO
+: 1479402903:0;fix
+: 1479405007:0;cat README
+: 1479408019:0;clear
+: 1479408022:0;git add .
+: 1479408037:0;git commit -m 'Reduced function usage'
+: 1479408040:0;git push
+: 1479408044:0;byes
+: 1479413227:0;ls
+: 1479442639:0;ll
+: 1479442724:0;fix
+: 1479446969:0;pwned 106.92.226.6
+: 1479446989:0;ssh-add-key
+: 1479447001:0;ssh-copy-id
+: 1479447017:0;ssh-copy-id .ssh/id_rsa.pub 
+: 1479447035:0;ssh-copy-id 106.92.226.6 .ssh/id_rsa.pub 
+: 1479447049:0;ssh-copy-id 106.92.226.6
+: 1479447065:0;pwned 106.92.226.6
+: 1479447117:0;byes
+: 1479448423:0;pwned 106.92.226.6
+: 1479448688:0;fortune
+: 1479448692:0;cowsay
+: 1479448699:0;sudo apt install cowsay fortune
+: 1479448720:0;fotune
+: 1479448727:0;fortune-mod
+: 1479448751:0;exit
+: 1479448755:0;fortune
+: 1479448765:0;cowsay
+: 1479448779:0;cowsay hey
+: 1479448784:0;cowsay hey -n
+: 1479448790:0;cowsay -n hey
+: 1479448800:0;cowsay -n hey -T
+: 1479448803:0;cowsay hey -T
+: 1479448812:0;cowsay -T hey
+: 1479448829:0;fortune | cowsay -n
+: 1479448844:0;clear
+: 1479448901:0;nano .zshrc
+: 1479449141:0;byes
+: 1479449691:0;pwned 106.92.226.6
+: 1479449872:0;byes
+: 1479477671:0;fix
+: 1479482727:0;up
+: 1479484880:0;fix
+: 1479484886:0;byes
+: 1479516333:0;cowsay hi
+: 1479516344:0;nano .zshrc
+: 1479516361:0;fourtne
+: 1479516454:0;fix
+: 1479527362:0;nano .zshrc
+: 1479527388:0;sudo apt install lolcat
+: 1479527398:0;fix
+: 1479527424:0;sudo apt install lolcat
+: 1479527521:0;byes
+: 1479530141:0;rasyberrypi.local
+: 1479530146:0;ssh rasyberrypi.local
+: 1479530156:0;ssh pi@rasyberrypi.local
+: 1479530165:0;ssh pi@raspberrypi.local
+: 1479530176:0;ifconfig
+: 1479530219:0;ssh pi@raspberrypi.local
+: 1479530264:0;netstat
+: 1479530279:0;clear
+: 1479530286:0;netstat | grep pi
+: 1479530293:0;netstat | grep raspberry
+: 1479530299:0;ifconfig
+: 1479530304:0;ssh pi@raspberrypi.local
+: 1479530574:0;ifconfig usb0
+: 1479530579:0;ifconfig
+: 1479530593:0;ssh pi@raspberrypi.local
+: 1479530611:0;netstat | grep raspberry
+: 1479530615:0;netstat | grep pi
+: 1479530643:0;ssh pi@raspberrypi
+: 1479530674:0;ssh --helpo
+: 1479530677:0;ssh --help
+: 1479530680:0;ssh -help
+: 1479530685:0;ssh -h
+: 1479530728:0;ifconfig
+: 1479530737:0;ssh pi@raspberrypi.local
+: 1479530762:0;ifconfig
+: 1479530815:0;ssh pi@raspberrypi.local
+: 1479530823:0;ssh pi@raspberrypi
+: 1479530834:0;ifconfig
+: 1479530841:0;netstat
+: 1479530850:0;clear
+: 1479530852:0;ifconfig
+: 1479530855:0;ssh pi@raspberrypi.local
+: 1479530927:0;nmap
+: 1479530929:0;clear
+: 1479530931:0;ifconfig
+: 1479530944:0;nmap enp0s20u5
+: 1479531077:0;arp-scan
+: 1479531082:0;nmap
+: 1479531096:0;nmap -6 enp0s20u5
+: 1479531105:0;ifconfig
+: 1479531119:0;nmap enp0s20u5
+: 1479531123:0;nmap enp0s20u5 -sn
+: 1479531148:0;ssh pi@92.242.140.2
+: 1479531340:0;ssh pi@raspberrypi.local
+: 1479531878:0;clear
+: 1479531880:0;ifconfig
+: 1479531892:0;clear
+: 1479531906:0;ifconfig
+: 1479531915:0;ssh pi@raspberrypi.local
+: 1479531944:0;ifconfig
+: 1479531946:0;ssh pi@raspberrypi.local
+: 1479531996:0;ifconfigf
+: 1479531998:0;ifconfig
+: 1479532001:0;ssh pi@raspberrypi.local
+: 1479532009:0;exit
+: 1479532837:0;ifconfig
+: 1479532868:0;ssh pi@raspberrypi.local
+: 1479532882:0;ncat
+: 1479532924:0;ncat enp0s20u5 -sn
+: 1479532940:0;netcat enp0s20u5 -sn
+: 1479533221:0;sudo apt search usbnet
+: 1479533342:0;sudo apt install usbnet
+: 1479533423:0;aot search avahi
+: 1479533428:0;apt search avahi
+: 1479533481:0;sudo apt install avahi-discover
+: 1479533527:0;ifconfig
+: 1479533534:0;ssh pi@raspberrypi.local
+: 1479533591:0;avahi-daemon --reload
+: 1479533596:0;sudo avahi-daemon --reload
+: 1479533606:0;clear
+: 1479533636:0;ifconfig
+: 1479533641:0;ssh pi@raspberrypi.local
+: 1479533823:0;clear
+: 1479533825:0;ifconfig
+: 1479533832:0;ssh pi@raspberrypi.local
+: 1479533846:0;exit
+: 1479535522:0;nano config.txt
+: 1479535585:0;nano cmdline.txt
+: 1479535633:0;exit
+: 1479535752:0;ssh pi@raspberrypi.local
+: 1479535770:0;ifconfig
+: 1479535787:0;ssh pi@raspberrypi.local
+: 1479536221:0;avahai-browse -art
+: 1479536239:0;avahi-browse -art
+: 1479536328:0;ssh pi@fe80::6ad:b298:e0ad:1673%enp0s20u5
+: 1479536798:0;nano network/interfaces
+: 1479536916:0;sudo nano network/interfaces
+: 1479537000:0;sudo nano wpa_supplicant/wpa_supplicant.conf
+: 1479537201:0;ifconfig
+: 1479537217:0;nmap -sn
+: 1479537228:0;nmap wlp1s0 -sn
+: 1479537279:0;nmap -p22 -sV 106.92.226.0/100
+: 1479537297:0;nmap -p22 -sV 106.92.226.0/24
+: 1479537339:0;ssh pi@105.92.226.2
+: 1479537350:0;ssh pi@106.92.226.2
+: 1479537354:0;ssh pi@106.92.226.8
+: 1479537357:0;ssh pi@106.92.226.15
+: 1479537374:0;nmap -p22 -sV 106.92.226.0/24
+: 1479537382:0;ssh pi@106.92.226.19
+: 1479537403:0;nmap -p22 -sV 106.92.226.0/24
+: 1479537432:0;nmap -sV 106.92.226.0/24
+: 1479537478:0;nmap -p22 -sV 106.92.226.0/24
+: 1479537696:0;ll
+: 1479538079:0;exit
+: 1479538096:0;for i in 2 3 4 5; do sudo ln -s /etc/init.d/ssh etc/rc$i.d/S02ssh; done
+: 1479538138:0;exit
+: 1479538237:0;nmap -p22 -sV 106.92.226.0/24
+: 1479538255:0;nmap -sV 106.92.226.0/24
+: 1479538304:0;nmap -p22 -sV 106.92.226.0/24
+: 1479538327:0;ssh pi@106.92.226.19
+: 1479538357:0;ssh pi@106.92.226.15
+: 1479538362:0;nmap -p22 -sV 106.92.226.0/24
+: 1479538399:0;ssh pi@106.92.226.19
+: 1479538405:0;ssh pi@106.92.226.14
+: 1479538408:0;ssh pi@106.92.226.15
+: 1479538410:0;ssh pi@106.92.226.16
+: 1479538418:0;nmap -p22 -sV 106.92.226.0/24
+: 1479538432:0;ssh pi@106.92.226.1
+: 1479538435:0;ssh pi@106.92.226.2
+: 1479538444:0;ssh pi@106.92.226.8
+: 1479538454:0;nmap -p22 -sV 106.92.226.0/24
+: 1479538477:0;nmap -sV 106.92.226.0/24
+: 1479538589:0;ssh pi@106.92.226.14 -p 62078
+: 1479538596:0;ssh pi@106.92.226.14
+: 1479538602:0;exit
+: 1479585134:0;sudo apt install gpart
+: 1479590957:0;ssh pi@10.5.5.71
+: 1479591196:0;ifconfig
+: 1479591201:0;byes
+: 1479624405:0;up
+: 1479624572:0;sudo apt update | lolcat
+: 1479624594:0;sudo apt upgrade | lolcat
+: 1479624655:0;sudo apt-get upgrade | lolcat
+: 1479625097:0;clear
+: 1479625104:0;sudo apt upgrade
+: 1479625157:0;cd projects
+: 1479625161:0;cd Projects
+: 1479625162:0;ls
+: 1479625166:0;cd dsis
+: 1479625175:0;git stash
+: 1479625181:0;git status
+: 1479625198:0;rm router.php
+: 1479625202:0;git pull
+: 1479625218:0;clear
+: 1479625219:0;ls
+: 1479625226:0;ll
+: 1479625230:0;ls -al
+: 1479625275:0;exit
+: 1479625280:0;byes
+: 1479658397:0;sudo apt update
+: 1479658447:0;sudo apt upgrade
+: 1479658550:0;pwd
+: 1479658556:0;byes
+: 1479658567:0;cd /home/josh/NineTails/chromebook_keyboard_backlight_driver
+: 1479658591:0;clear
+: 1479658597:0;make
+: 1479658700:0;sudo cp chromeos_keyboard_leds.ko chromebook_kb_backlight.ko /lib/modules/'uname -r'/kernel/drivers/platform/chrome/
+: 1479658747:0;sudo cp chromeos_keyboard_leds.ko chromebook_kb_backlight.ko /lib/modules/`uname -r`/kernel/drivers/platform/chrome/
+: 1479658758:0;sudo depmod -a
+: 1479658778:0;sudo insmod chromeos_keyboard_leds
+: 1479658781:0;sudo insmod chromeos_keyboard_leds.ko
+: 1479658800:0;sudo insmod chromebook_kb_backlight.ko
+: 1479658828:0;sudo cp keyboard_brightness /usr/local/bin
+: 1479658855:0;sudo chmod u+s /usr/local/bin/keyboard_brightness
+: 1479658867:0;cd
+: 1479658870:0;byes
+: 1479701419:0;ls
+: 1479701425:0;exit
+: 1479710831:0;up
+: 1479710842:0;up | lolcat
+: 1479710881:0;exit
+: 1479747378:0;fix
+: 1479747393:0;exit
+: 1479759704:0;up
+: 1479759788:0;byes
+: 1479827090:0;up
+: 1479827103:0;byes
+: 1479827119:0;arduino
+: 1479827140:0;cd Projects
+: 1479827141:0;ls
+: 1479827144:0;cd hvac-model
+: 1479827144:0;ls
+: 1479827156:0;nano TO-DO
+: 1479827166:0;rm -rf TO-DO
+: 1479827176:0;ls
+: 1479856811:0;clear
+: 1479856813:0;git add .
+: 1479856827:0;git commit -m 'Setup for three motors'
+: 1479856829:0;git push
+: 1479875103:0;cd Projects
+: 1479875105:0;ll
+: 1479875128:0;mkdir chispa-ms
+: 1479875134:0;cd chispa-ms
+: 1479875176:0;nano README
+: 1479879293:0;git init
+: 1479879300:0;git add .
+: 1479879316:0;git commmit -m 'Begin!'
+: 1479879321:0;git commit -m 'Begin!'
+: 1479879330:0;ls
+: 1479879359:0;exit
+: 1479879712:0;cd Projects/chispa-ms
+: 1479879715:0;ls
+: 1479879720:0;exit
+: 1479911178:0;up
+: 1479911237:0;cd Projects
+: 1479911238:0;ls
+: 1479911242:0;cd hvac-model
+: 1479911243:0;ls
+: 1479911274:0;cd hvac_trinket
+: 1479911275:0;ls
+: 1479911286:0;lolcat hvac_trinket.ino
+: 1479911689:0;cd ..
+: 1479911690:0;ls
+: 1479911702:0;arduino
+: 1479912720:0;git add .
+: 1479912780:0;git commit -m "Changed dunce to input history so all three pin histories are independent"
+: 1479912784:0;git push
+: 1479912831:0;cd ..
+: 1479912833:0;ls
+: 1479912841:0;cd chispa-ms
+: 1479912844:0;clear
+: 1479912845:0;ll
+: 1479920869:0;nano README
+: 1479924119:0;fix
+: 1479924271:0;exit
+: 1480011771:0;up
+: 1480011840:0;cd Projects
+: 1480011841:0;ls
+: 1480011848:0;nano hvac-model
+: 1480011857:0;nano hvac-model/hvac-model.ino
+: 1480011877:0;nano hvac-model/hvac-trinket/hvac-trinket.ino
+: 1480011884:0;nano hvac-model/hvac-trinket/hvac_trinket.ino
+: 1480011888:0;nano hvac-model/hvac_trinket/hvac_trinket.ino
+: 1480012375:0;nano ~/.nanorc
+: 1480012404:0;nano hvac-model/hvac_trinket/hvac_trinket.ino
+: 1480013398:0;arduino
+: 1480013457:0;exit
+: 1480047344:0;fix
+: 1480047349:0;exit
+: 1480050925:0;samba
+: 1480050940:0;sudo apt install samba
+: 1480052066:0;ssh pices
+: 1480052100:0;ssh pisces
+: 1480052113:0;ssh pisces.local
+: 1480091451:0;define
+: 1480091469:0;exit
+: 1480096854:0;ssh cit-admin@penny.local
+: 1480122945:0;clear
+: 1480122947:0;ls
+: 1480123097:0;ssh pi@raspberrypi.local
+: 1480123267:0;byes
+: 1480138857:0;up
+: 1480185723:0;ls
+: 1480185725:0;exit
+: 1480186009:0;pwned 10.5.5.54
+: 1480186067:0;pwned cit-admin@10.5.5.54
+: 1480187307:0;clear
+: 1480187406:0;cat id_rsa.pub
+: 1480187416:0;cat ~/.shh/id_rsa.pub
+: 1480187430:0;ls -al
+: 1480187434:0;cd .ssh
+: 1480187434:0;ls
+: 1480187442:0;lolcat id_rsa.pub
+: 1480187486:0;cd
+: 1480187487:0;clear
+: 1480187527:0;pwned root@138.68.45.241
+: 1480190251:0;ssh-keygen -f "/home/josh/.ssh/known_hosts" -R 138.68.45.241
+: 1480190254:0;clear
+: 1480190256:0;pwned root@138.68.45.241
+: 1480190386:0;pwned 138.68.45.241
+: 1480205752:0;clear
+: 1480205757:0;pwned penny.local
+: 1480205801:0;pwned cit-admin@penny.local
+: 1480206070:0;exit
+: 1480206098:0;pwned cit-admin@penny.local
+: 1480211023:0;byes
+: 1480211055:0;exit
+: 1480227478:0;fix
+: 1480227486:0;byes
+: 1480234573:0;sudo apt install lubuntu-qt-desktop
+: 1480287588:0;cd Projects
+: 1480287589:0;ls
+: 1480287591:0;cd dsis
+: 1480287593:0;git pull
+: 1480287648:0;cd ../mysetup
+: 1480287650:0;git pull
+: 1480287661:0;ls
+: 1480287715:0;bash
+: 1480287752:0;git add .
+: 1480288111:0;git commit -m 'updated lists'
+: 1480288112:0;git push
+: 1480288336:0;cd Projects/mysetup
+: 1480288338:0;git push
+: 1480288357:0;cd ~/.ssh
+: 1480288358:0;ls
+: 1480290743:0;ssh
+: 1480290753:0;cd ~/Projects/mysetup
+: 1480290755:0;git push
+: 1480290877:0;ssh cit-admin@penny.local
+: 1480290892:0;clear
+: 1480290903:0;cd .ssh
+: 1480290905:0;ls
+: 1480290907:0;cd ..
+: 1480290911:0;cd .ssh
+: 1480290916:0;rm -rf *
+: 1480290919:0;ls -al
+: 1480290923:0;cd
+: 1480290926:0;ssh-keygen
+: 1480291028:0;cd .ssh
+: 1480291029:0;ls
+: 1480291039:0;lolcat id_rsa.pub
+: 1480291075:0;ls
+: 1480291081:0;rm -rf *
+: 1480291086:0;ls -al
+: 1480291133:0;ssh-keygen -t rsa -b 4096 -C "mr.josh.bowen@gmail.com"
+: 1480291160:0;ssh-add ~/.ssh/id_rsa
+: 1480291185:0;lolcat id_rsa.pub
+: 1480291404:0;cd
+: 1480291405:0;clear
+: 1480291406:0;ll
+: 1480291608:0;pwned 138.68.45.241
+: 1480291631:0;pwned root@138.68.45.241
+: 1480291636:0;clear
+: 1480291637:0;ll
+: 1480291702:0;cd Projects/mysetup
+: 1480291703:0;git push
+: 1480291770:0;git cd ../dsis
+: 1480291771:0;git push
+: 1480291879:0;ssh-add
+: 1480291885:0;git push
+: 1480291980:0;git config --global user.name "Josh Bowen"
+: 1480291989:0;git config --global user.email "YOUR EMAIL ADDRESS"
+: 1480292054:0;git config --global user.email "mr.josh.bowen@gmail.com"
+: 1480292059:0;clear
+: 1480292166:0;ssh -T git@github.com
+: 1480292210:0;git push
+: 1480292325:0;cd ../dsis
+: 1480292327:0;git push
+: 1480292355:0;cd 
+: 1480292357:0;clear
+: 1480292357:0;ll
+: 1480292363:0;rm -rf mysetup.sh
+: 1480292366:0;ll
+: 1480292372:0;arduino
+: 1480292386:0;exit
+: 1480295668:0;vlc -v
+: 1480295685:0;exit
+: 1480299775:0;sudo apt install cabextract
+: 1480299789:0;sudo apt install winetricks
+: 1480299807:0;winetricks vcrun2005sp1
+: 1480299875:0;winetricks vcrun2008
+: 1480299896:0;winetricks vcrun2016
+: 1480299904:0;winetricks vcrun2010
+: 1480299911:0;exit
+: 1480299992:0;winetricks vcrun2005sp1
+: 1480299997:0;winetricks vcrun2008
+: 1480300001:0;winetricks vcrun2010
+: 1480300004:0;exit
+: 1480300561:0;env WINEPREFIX="/home/josh/.wine" wine C:\\windows\\command\\start.exe /Unix /home/josh/.wine/dosdevices/c:/users/Public/Desktop/123D\ Design.lnk
+: 1480300570:0;clear
+: 1480300574:0;env WINEPREFIX="/home/josh/.wine" wine C:\\windows\\command\\start.exe /Unix /home/josh/.wine/dosdevices/c:/users/Public/Desktop/123D\ Design.lnk
+: 1480308898:0;nano error
+: 1480308906:0;exit
+: 1480308917:0;fix
+: 1480308937:0;exit
+: 1480316139:0;ll
+: 1480316184:0;byes
+: 1480354403:0;nano /etc/laptop-mode/conf.d/lcd-brightness.conf 
+: 1480354654:0;sudo nano /etc/laptop-mode/conf.d/lcd-brightness.conf 
+: 1480354730:0;exit
+: 1480375091:0;arduino
+: 1480375743:0;clear
+: 1480375806:0;arduino
+: 1480375816:0;sudo arduino
+: 1480405059:0;ll
+: 1480405063:0;ls -al
+: 1480405072:0;cd .wine
+: 1480405079:0;clear
+: 1480405081:0;ls -al
+: 1480405089:0;cd drive_c
+: 1480405094:0;ls -al
+: 1480405100:0;cd Program Files
+: 1480405108:0;cd "Program Files"
+: 1480405109:0;ls
+: 1480405116:0;cd Autodesk
+: 1480405117:0;ls
+: 1480405120:0;ls -al
+: 1480405122:0;cd ..
+: 1480405127:0;rm -rf uA
+: 1480405137:0;rm -rf Autodesk
+: 1480405140:0;ls -al
+: 1480405146:0;cd Common Files
+: 1480405154:0;cd "Common Files"
+: 1480405155:0;ls
+: 1480405159:0;ls -al
+: 1480405164:0;cd System
+: 1480405166:0;ls -al
+: 1480405175:0;cd "OLE DB"
+: 1480405175:0;ls
+: 1480405180:0;cd ../../..
+: 1480405182:0;ls
+: 1480405184:0;cd ..
+: 1480405187:0;clear
+: 1480405188:0;ls -al
+: 1480405200:0;cd "Program Files (x86)"
+: 1480405204:0;ls -al
+: 1480405212:0;cd ..
+: 1480405216:0;cd users
+: 1480405216:0;ls
+: 1480405219:0;cd josh
+: 1480405220:0;ls
+: 1480405228:0;tree
+: 1480405235:0;sudo apt install tree
+: 1480405250:0;tree
+: 1480405283:0;cd Tmp
+: 1480405283:0;ls
+: 1480405288:0;cd Temp
+: 1480405289:0;ls
+: 1480405296:0;rm -rm *
+: 1480405304:0;rm -f *
+: 1480405310:0;ls
+: 1480405334:0;rm -rf *
+: 1480405341:0;cd ../..
+: 1480405343:0;cd ..
+: 1480405345:0;ls
+: 1480405352:0;cd windows
+: 1480405353:0;ls
+: 1480405355:0;tree
+: 1480405375:0;cd
+: 1480405378:0;clear
+: 1480405508:0;cd Projects/mysetup
+: 1480405514:0;nano mysetup.sh
+: 1480405524:0;git add .
+: 1480405531:0;git commit -m "Added tree"
+: 1480405533:0;git push
+: 1480405545:0;git remote -v
+: 1480405610:0;git remote set-url origin git@github.com:Skraelingjar/mysetup.git
+: 1480405614:0;git remote -v
+: 1480405618:0;git push
+: 1480405625:0;cd ..
+: 1480405627:0;ls
+: 1480405632:0;cd bizget
+: 1480405633:0;ls
+: 1480405637:0;git remote -v
+: 1480405639:0;cd ..
+: 1480405640:0;ls
+: 1480405644:0;exit
+: 1480430234:0;fix
+: 1480430240:0;byes
+: 1480430493:0;arduino
+: 1480430509:0;sudo arduino
+: 1480431315:0;cd Projects
+: 1480431319:0;cd hvac-model
+: 1480431320:0;ls
+: 1480431325:0;cd hvac_trinket
+: 1480431325:0;ls
+: 1480431328:0;ls -al
+: 1480431341:0;chown hvac_trinket.ino josh
+: 1480431352:0;sudo chown josh hvac_trinket.ino
+: 1480431356:0;ls -al
+: 1480431366:0;chgrp
+: 1480431375:0;chgrp josh hvac_trinket.ino
+: 1480431378:0;ls -al
+: 1480431385:0;arduino
+: 1480431560:0;sudo arduino
+: 1480442677:0;clear
+: 1480442678:0;ls -al
+: 1480442680:0;cd ..
+: 1480442681:0;ls
+: 1480442705:0;clear
+: 1480442707:0;ls -al
+: 1480442713:0;git add .
+: 1480442737:0;git commit -m "Arduino code working as expected"
+: 1480442741:0;git push
+: 1480442841:0;ls
+: 1480442844:0;git add .
+: 1480442860:0;git commit -m 'Added L293D pinout'
+: 1480443435:0;ls
+: 1480449951:0;cd Projects/hvac-model
+: 1480449951:0;ls
+: 1480449954:0;git add .
+: 1480449963:0;git commit -m "Completed wiring diagram"
+: 1480449965:0;git push
+: 1480449968:0;exit
+: 1480487982:0;up
+: 1480488149:0;ll
+: 1480521552:0;pwned cit-admin@10.5.5.54
+: 1480522048:0;git pull
+: 1480522052:0;exit
+: 1480522458:0;sudo apt install httpd
+: 1480522472:0;sudo apt install mini-httpd
+: 1480522485:0;mini-httpd
+: 1480522573:0;sudo apt purge mini-httpd
+: 1480522647:0;ssh 138.68.45.241
+: 1480522732:0;cd Projects
+: 1480522734:0;cd dsis
+: 1480522734:0;ls
+: 1480522737:0;git add .
+: 1480522745:0;git commit -m 'test phpunit'
+: 1480522747:0;git push
+: 1480522910:0;ls
+: 1480524435:0;exit
+: 1480525156:0;cd Projects/dsis
+: 1480525163:0;cd tickets
+: 1480525169:0;nano handler.php
+: 1480525190:0;git status
+: 1480525194:0;exit
+: 1480525691:0;cd Projects/dsis/tests
+: 1480525691:0;ls
+: 1480525694:0;nano main.php
+: 1480525698:0;cd ..
+: 1480525699:0;ls
+: 1480525700:0;ls -al
+: 1480525707:0;nano .travis.yml
+: 1480525912:0;exit
+: 1480529498:0;fix
+: 1480529505:0;exit
+: 1480540098:0;up
+: 1480541061:0;apt search chi
+: 1480541075:0;apt search chi | less
+: 1480541145:0;exit
+: 1480547373:0;fix
+: 1480565047:0;byes
+: 1480571284:0;up
+: 1480571442:0;exit
+: 1480607252:0;ls
+: 1480607256:0;exit
+: 1480620766:0;git add .
+: 1480620789:0;git commit -m "added boxes & updated diagram"
+: 1480620791:0;git push
+: 1480638178:0;pwned josbow14@getchispa.com
+: 1480638280:0;exit
+: 1480638310:0;pwned josbow14@getchispa.com
+: 1480638361:0;exit
+: 1480653917:0;apt search chromium
+: 1480713629:0;up
+: 1480713728:0;exit
+: 1480726614:0;xclip
+: 1480726623:0;sudo apt install -y xclip
+: 1480726642:0;clear
+: 1480726643:0;ls
+: 1480726646:0;xclip -h
+: 1480726653:0;cd Projects/mysetup
+: 1480726653:0;ls
+: 1480726657:0;nano mysetup.sh
+: 1480726670:0;sudo apt install jq
+: 1480726691:0;git add .
+: 1480726699:0;git commit -m "Added xclip"
+: 1480726700:0;git push
+: 1480726703:0;exit
+: 1480726707:0;sudo apt install jq
+: 1480726716:0;clear
+: 1480726717:0;ls
+: 1480726721:0;xclip -h
+: 1480726724:0;jq -h
+: 1480726795:0;xclip -o | lolcat
+: 1480726809:0;jq -h | xclip -i
+: 1480726812:0;xclip -o | lolcat
+: 1480726823:0;xclip -h | lolcat
+: 1480726845:0;jq -h | lolcat
+: 1480726854:0;exit
+: 1480728606:0;pwned josbow14@joshuabowen.info
+: 1480729126:0;exit
+: 1480742477:0;fix
+: 1480742492:0;exit
+: 1480742545:0;pwned 138.68.45.241
+: 1480744779:0;exit
+: 1480786957:0;pwned cit-admin@penny.local
+: 1480788193:0;exit
+: 1480790711:0;cd Projects/dsis
+: 1480790712:0;ls
+: 1480790714:0;git pull
+: 1480790953:0;cd data
+: 1480790958:0;ls
+: 1480790963:0;rm -rf dashboard.php
+: 1480790983:0;git add .
+: 1480791000:0;git commit -m 'Removed dashboard.php from data, not in use' 
+: 1480791002:0;git push
+: 1480791013:0;cd
+: 1480791018:0;pwned cit-admin@penny.local
+: 1480792176:0;git add .
+: 1480792225:0;git commit -m 'Changed data results to odbc'
+: 1480792226:0;git push
+: 1480792425:0;git add .
+: 1480792435:0;git commit -m 'Attempt 1'
+: 1480792436:0;git push
+: 1480900462:0;fix
+: 1480900479:0;exit
+: 1480954678:0;up
+: 1480975829:0;pwned http://138.68.45.241/
+: 1480975834:0;pwned 138.68.45.241
+: 1480976165:0;cat .ssh/id_rsa.pub
+: 1480976173:0;exit
+: 1480982181:0;pwned 138.68.45.241
+: 1480982212:0;exit
+: 1480983473:0;up
+: 1480984027:0;exit
+: 1480985910:0;fix
+: 1481042226:0;pwned 138.68.45.241
+: 1481042380:0;exit
+: 1481051193:0;up
+: 1481051247:0;exit
+: 1481124983:0;up
+: 1481125012:0;exit
+: 1481155700:0;up
+: 1481155744:0;exit
+: 1481170967:0;fix
+: 1481172659:0;ping google.com
+: 1481172675:0;pwned 138.68.45.241
+: 1481172775:0;exit
+: 1481225642:0;fix
+: 1481240745:0;pwned 138.68.45.241
+: 1481240890:0;exit
+: 1481245899:0;sudo apt install thread
+: 1481245919:0;sudo apt install thread-daily
+: 1481245926:0;apt search thread
+: 1481245938:0;apt search thread | less
+: 1481245971:0;apt search thread | grep thread | less
+: 1481245999:0;exit
+: 1481251704:0;pwned 138.68.45.241
+: 1481252514:0;gedit
+: 1481252922:0;pwned 138.68.45.241
+: 1481252953:0;exit
+: 1481261640:0;fix
+: 1481318916:0;pwned 138.68.45.241
+: 1481408110:0;up
+: 1481425883:0;fix
+: 1481425963:0;pwned 138.68.45.241
+: 1481437746:0;pwned 159.203.176.16
+: 1481437757:0;pwned root@159.203.176.16
+: 1481438149:0;pwned 159.203.176.16
+: 1481438225:0;clear
+: 1481438227:0;pwned 159.203.176.16
+: 1481438463:0;clear
+: 1481438465:0;pwned 159.203.176.16
+: 1481438511:0;clear
+: 1481438527:0;pwned 159.203.176.16
+: 1481439785:0;clear
+: 1481439787:0;pwned 159.203.176.16
+: 1481440233:0;cd Downloads
+: 1481440234:0;ls
+: 1481440351:0;scp '/home/josh/Downloads/9m3tfvrfs-i-todd-diemer.jpg' 159.203.176.16:~/
+: 1481440381:0;scp '/home/josh/Downloads/px-aerial-html.zip' 159.203.176.16:~/
+: 1481440404:0;exit
+: 1481440532:0;pwned 159.203.176.16
+: 1481440660:0;exit
+: 1481480191:0;pwned 159.203.176.16
+: 1481481450:0;exit
+: 1481490829:0;fix
+: 1481497915:0;exit
+: 1481506565:0;cd Projects
+: 1481506566:0;ls
+: 1481506584:0;rm -rf hvac-model_11-29-2016.zip
+: 1481506647:0;git clone git@github.com:Skraelingjar/personal-site.git
+: 1481506652:0;ls
+: 1481506659:0;cd personal-site
+: 1481506720:0;cleas
+: 1481506723:0;clear
+: 1481506724:0;ls
+: 1481509067:0;cd Projects
+: 1481509072:0;cd personal-website
+: 1481509074:0;ls
+: 1481509078:0;cd personal-site
+: 1481509081:0;git stash
+: 1481509088:0;ls
+: 1481509096:0;git stash clear
+: 1481509105:0;git pull
+: 1481509137:0;git status
+: 1481509157:0;rm -rf assets/js/vue.min.js
+: 1481509159:0;clear
+: 1481509161:0;exit
+: 1481560953:0;up
+: 1481563436:0;sudo apt install python3-xlib scrot python3-tk python3-dev
+: 1481563483:0;pip3 install pyautogui
+: 1481563491:0;sudo apt install pip3
+: 1481563494:0;sudo apt install pip
+: 1481563503:0;sudo apt install python3-pip
+: 1481563521:0;pip3 install pyautogui
+: 1481563555:0;pip3 install --upgrade pip
+: 1481563564:0;clear
+: 1481563568:0;python3
+: 1481563584:0;clear
+: 1481563584:0;ls
+: 1481563589:0;cd Projects
+: 1481563590:0;ls
+: 1481563596:0;mkdir fuq
+: 1481563599:0;cd fuq
+: 1481563690:0;nano fuq.py
+: 1481563710:0;ls
+: 1481563771:0;nano fuq.py
+: 1481563825:0;chmod u
+: 1481563835:0;chmod u+x fuq.py
+: 1481563839:0;ls
+: 1481563845:0;./fuq.py
+: 1481563870:0;python3 fuq.py
+: 1481563981:0;nano fuq.py
+: 1481564011:0;python3 fuq.py
+: 1481564021:0;nano fuq.py
+: 1481564267:0;python3 fuq.py
+: 1481564298:0;nano fuq.py
+: 1481564468:0;python3 fuq.py
+: 1481564726:0;nano fuq.py
+: 1481564821:0;python3 fuq.py
+: 1481567869:0;clear
+: 1481567957:0;python3 fuq.py
+: 1481572437:0;clear
+: 1481572457:0;python3 fuq.py
+: 1481574697:0;clear
+: 1481574744:0;python3 fuq.py
+: 1481576677:0;exit
+: 1481577362:0;cd Projects/fuq
+: 1481577362:0;ls
+: 1481577376:0;python3 fuq.py
+: 1481603832:0;fix
+: 1481740702:0;pwned yournew.ste
+: 1481740706:0;pwned yournew.site
+: 1481740743:0;pwned my.getchispa.com
+: 1481740754:0;pwned yournew.site
+: 1481740791:0;exit
+: 1481745064:0;pwned yournew.site
+: 1481745105:0;pwned josbow14@scalecove.com
+: 1481745150:0;exit
+: 1481745171:0;pwned josbow14@scalecove.com
+: 1481745550:0;exit
+: 1481934359:0;fix
+: 1482117440:0;up
+: 1482118031:0;exit
+: 1482169703:0;ifconfig
+: 1482170153:0;fix
+: 1482285796:0;up
+: 1482286918:0;cd projects
+: 1482286922:0;cd Projects
+: 1482286923:0;ls
+: 1482286929:0;git clone git@gitlab.com:chispa/bertelsen.git
+: 1482379608:0;up
+: 1482455772:0;fix
+: 1482455778:0;exit
+: 1482455977:0;cd Projects/bertelsen
+: 1482455979:0;git push
+: 1482455984:0;git add .
+: 1482455996:0;git commit -m "Added additions info."
+: 1482455997:0;git push
+: 1482456018:0;pwned yournew.site
+: 1482456058:0;exit
+: 1482531306:0;cd Projects/bertelsen
+: 1482531307:0;ls
+: 1482531309:0;git push
+: 1482531500:0;exit
+: 1482532019:0;pwned yournew.site
+: 1482532046:0;exit
+: 1482534713:0;fix
+: 1482534721:0;exit
+: 1482704101:0;up
+: 1482714867:0;fix
+: 1482715169:0;cd Downloads
+: 1482715172:0;ls
+: 1482715609:0;tar -xzf pia-v66-installer-linux.tar.gz
+: 1482715613:0;ls
+: 1482715653:0;./pia-v66-installer.sh
+: 1482715665:0;./pia-v66-installer-linux.sh
+: 1482715708:0;exit
+: 1482785248:0;up
+: 1482855126:0;fix
+: 1482855133:0;exit
+: 1482855165:0;up
+: 1482855565:0;pwned getchispa.com
+: 1482855607:0;pwned josbow14@getchispa.com
+: 1482856083:0;exit
+: 1482887162:0;cd chromebook_keyboard_backlight_driver
+: 1482887164:0;ls
+: 1482887225:0;cd chromebook_keyboard_backlight_driver
+: 1482887227:0;clear
+: 1482887231:0;make
+: 1482887249:0;sudo cp chromeos_keyboard_leds.ko chromebook_kb_backlight.ko /lib/modules/`uname -r`/kernel/drivers/platform/chrome/
+: 1482887262:0;sudo depmod -a
+: 1482887292:0;apt-get moo
+: 1482887318:0;fortune | cowsay | lolcat
+: 1482887333:0;fortune | cowsay -n dragon | lolcat
+: 1482887339:0;fortune | cowsay -f dragon | lolcat
+: 1482887357:0;fortune | cowsay -f ghostbusters | lolcat
+: 1482887384:0;clear
+: 1482887397:0;sudo insmod chromeos_keyboard_leds
+: 1482887407:0;sudo insmod chromeos_keyboard_leds.ko
+: 1482887415:0;sudo insmod chromebook_kb_backlight.ko
+: 1482887422:0;sudo cp keyboard_brightness /usr/local/bin
+: 1482887435:0;sudo chmod u+s /usr/local/bin/keyboard_brightness
+: 1482887452:0;exit
+: 1482887815:0;up
+: 1482889235:0;cd Projects/dabware
+: 1482889248:0;ls
+: 1482889250:0;git init
+: 1482889254:0;git add .
+: 1482889259:0;git commit -m 'Init'
+: 1482889690:0;gem install gosu
+: 1482889705:0;sudo gem install gosu
+: 1482889817:0;sudo apt-get install build-essential libsdl2-dev libsdl2-ttf-dev libpango1.0-dev libgl1-mesa-dev libopenal-dev libsndfile-dev
+: 1482889877:0;ls -al
+: 1482890422:0;clear
+: 1482890423:0;ls -al
+: 1482892408:0;fix
+: 1482892517:0;sudo apt install dolphin
+: 1482892657:0;clear
+: 1482892664:0;sudo apt-add-repository ppa:dolphin-emu/ppa
+: 1482892680:0;sudo apt update
+: 1482892729:0;sudo apt install dolphin-emu
+: 1482978792:0;ls -al
+: 1483222302:0;ifconfig
+: 1483248095:0;xbacklight
+: 1483248098:0;xbacklight off
+: 1483248114:0;xbacklight -dec 100
+: 1483249894:0;sudo xbacklight -dec 100
+: 1483249901:0;sudo xbacklight -dec 10
+: 1483249906:0;sudo xbacklight -inc 100
+: 1483249909:0;exit
+: 1483250221:0;cd Projects
+: 1483250229:0;ls
+: 1483250260:0;mkdir jbacklight
+: 1483250265:0;cd jbacklight
+: 1483250266:0;ls
+: 1483250280:0;touch jbacklight.sh
+: 1483250297:0;touch README.md
+: 1483250306:0;git init
+: 1483250308:0;git add .
+: 1483250315:0;git commit -m 'init'
+: 1483250512:0;ls
+: 1483250517:0;nano jbacklight.sh
+: 1483250743:0;exit
+: 1483250850:0;which zsh
+: 1483250855:0;cd /usr/bin
+: 1483250856:0;ls
+: 1483250874:0;cd
+: 1483250885:0;git clone git@github.com:snobb/xbright.git
+: 1483250896:0;ls
+: 1483250901:0;cd xbright
+: 1483250916:0;make && sudo make install
+: 1483250980:0;ls
+: 1483250990:0;cd obj
+: 1483250991:0;ls
+: 1483250993:0;cd ..
+: 1483250997:0;make && sudo make install
+: 1483251007:0;make -h
+: 1483251124:0;cd ..
+: 1483251128:0;rm prf xbright
+: 1483251133:0;rm -rf xbright
+: 1483251254:0;xbacklight -get
+: 1483251260:0;exit
+: 1483251366:0;cd Projects
+: 1483251374:0;git clone git@github.com:calebwatt15/bright.git
+: 1483251379:0;cd bright
+: 1483251380:0;ls
+: 1483251386:0;nano bright 
+: 1483251395:0;./bright
+: 1483251406:0;./bright 10
+: 1483251408:0;./bright 100
+: 1483251411:0;./bright 10
+: 1483251600:0;nano bright
+: 1483252976:0;cd /sys/class/backlight
+: 1483252976:0;ls
+: 1483252981:0;cd intel_backlight
+: 1483252982:0;ls
+: 1483252987:0;cat brightness
+: 1483252992:0;cat actual_brightness
+: 1483253001:0;cat max_brightness
+: 1483253018:0;ls
+: 1483253020:0;cat max_brightness
+: 1483253022:0;cat brightness
+: 1483253029:0;cd ~/Projects
+: 1483253030:0;ls
+: 1483253035:0;cd bright
+: 1483253035:0;ls
+: 1483253050:0;./bright 50
+: 1483253056:0;cat brightness
+: 1483253065:0;./bright 10
+: 1483290308:0;./bright 20
+: 1483290507:0;cat brightness
+: 1483290601:0;./bright 10
+: 1483290606:0;./bright -10
+: 1483290635:0;./bright 50
+: 1483290644:0;cat brightness
+: 1483290650:0;./bright 50
+: 1483290657:0;cat brightness
+: 1483290752:0;./bright -500
+: 1483290759:0;./bright 10
+: 1483290851:0;./bright -10
+: 1483290855:0;./bright -100
+: 1483290859:0;./bright -99
+: 1483290867:0;./bright 100
+: 1483290871:0;./bright 10
+: 1483290878:0;./bright -10
+: 1483290885:0;./bright 10
+: 1483290991:0;cd ..
+: 1483291004:0;mv bright bright.old
+: 1483291005:0;ls
+: 1483291012:0;git clone git@github.com:Skraelingjar/bright.git
+: 1483291019:0;cd bright
+: 1483291021:0;ls
+: 1483291032:0;nano bright
+: 1483291212:0;nano README.md
+: 1483291248:0;git add .
+: 1483291272:0;git commit -m "Modified to change by percentage"
+: 1483291274:0;git push
+: 1483291285:0;exit
+: 1483291303:0;cd Projects/bright
+: 1483291305:0;ls
+: 1483291330:0;sudo cp bright /usr/local/bin/bright
+: 1483291341:0;cat $PATH
+: 1483291352:0;cd /usr/local/bin
+: 1483291353:0;ls
+: 1483291419:0;sudo chmod u+s /usr/local/bin/bright
+: 1483291422:0;ls
+: 1483291444:0;cd ~/Projects/bright
+: 1483291451:0;nano README.md
+: 1483291573:0;sudo cp bright /usr/local/bin/
+: 1483291576:0;cd /usr/local/bin
+: 1483291577:0;ls
+: 1483291589:0;cd ~/Projects/bright
+: 1483291592:0;git add .
+: 1483291601:0;git commit -m "Updated readme"
+: 1483291603:0;git push
+: 1483291625:0;bright 10
+: 1483291630:0;bright -10
+: 1483291928:0;bright
+: 1483291996:0;bright 10
+: 1483292011:0;cd ~/Projects/bright
+: 1483292015:0;nano bright
+: 1483292053:0;./bright 10
+: 1483292067:0;sudo cp bright /usr/local/bin
+: 1483292074:0;bright 10
+: 1483292081:0;cd /usr/local/bin
+: 1483292081:0;ls
+: 1483292165:0;sudo rm -rf bright
+: 1483292166:0;ls
+: 1483292186:0;sudo cp ~/Projects/bright/bright /usr/local/bin
+: 1483292187:0;ls
+: 1483292199:0;sudo chmod u+s /usr/local/bin/bright
+: 1483292201:0;ls
+: 1483292211:0;cd
+: 1483292214:0;bright 10
+: 1483292241:0;sudo rm -rf /usr/local/bin/bright
+: 1483292247:0;cd Porjects/bright
+: 1483292252:0;cd Projects/bright
+: 1483292256:0;git stash
+: 1483292267:0;nano bright
+: 1483292282:0;./bright 10
+: 1483292302:0;cp bright /usr/local/bin
+: 1483292306:0;sudo cp bright /usr/local/bin
+: 1483292320:0;sudo chmod u+s /usr/local/bin/bright
+: 1483292325:0;cd
+: 1483292327:0;bright 10
+: 1483292331:0;bright -10
+: 1483292338:0;bright 10
+: 1483292398:0;nano /usr/local/bin/bright
+: 1483292402:0;sudo nano /usr/local/bin/bright
+: 1483292428:0;bright 10
+: 1483292493:0;cd /usr/local/bin
+: 1483292495:0;ls -al
+: 1483292579:0;bright 10
+: 1483292594:0;cd ~/Projects/bright
+: 1483292595:0;ls
+: 1483292597:0;git stash
+: 1483292615:0;sudo rm -rf /usr/local/bin/bright
+: 1483292627:0;nano bright
+: 1483292645:0;cd Projects/bright
+: 1483292649:0;ls
+: 1483292665:0;sudo cp bright /usr/local/bin
+: 1483292679:0;sudo chmod u+s /usr/local/bin/bright
+: 1483292690:0;bright 10
+: 1483292709:0;sudo nano /usr/local/bin/bright
+: 1483292730:0;bright 10
+: 1483292735:0;sudo bright 10
+: 1483292759:0;sudo rm -rf /usr/local/bin/bright
+: 1483292764:0;cd Projects/bright
+: 1483292771:0;sudo cp bright /usr/local/bin
+: 1483292813:0;nano README.md
+: 1483292832:0;git add .
+: 1483292849:0;git commit -m 'Updated readme'
+: 1483292851:0;git push
+: 1483292872:0;sudo nano /etc/sudoers
+: 1483292921:0;apt install poo
+: 1483292927:0;bright 10
+: 1483292931:0;bright -10
+: 1483295065:0;cd Projects/bright
+: 1483295069:0;nano bright
+: 1483498795:0;cd .oh-my-zsh
+: 1483498796:0;ls
+: 1483498800:0;cd plugins
+: 1483498801:0;ls
+: 1483498825:0;rm -rf cargo
+: 1483498835:0;rm -rf cp
+: 1483498883:0;rm -rf extract
+: 1483498894:0;rm -rf nomad
+: 1483498897:0;rm -rf svn
+: 1483498901:0;rm -rf las-working-dir
+: 1483498906:0;rm -rf last-working-dir
+: 1483498937:0;cd ..
+: 1483498939:0;git clone
+: 1483498944:0;ls
+: 1483498952:0;oh-my-zsh.sh
+: 1483498955:0;./oh-my-zsh.sh
+: 1483498960:0;sudo ./oh-my-zsh.sh
+: 1483498976:0;cd tools
+: 1483498978:0;ls
+: 1483498991:0;./check_for_upgrade.sh
+: 1483499000:0;sudo ./check_for_upgrade.sh
+: 1483499024:0;pwd
+: 1483499048:0;~/.oh-my-zsh/tools/check_for_upgrade.sh
+: 1483499052:0;sudo ~/.oh-my-zsh/tools/check_for_upgrade.sh
+: 1483499063:0;sh ~/.oh-my-zsh/tools/check_for_upgrade.sh
+: 1483499081:0;ls
+: 1483499096:0;up
+: 1483550265:0;ssh josbow14@getchispa.copm
+: 1483550268:0;ssh josbow14@getchispa.com
+: 1483550316:0;ssh yournew.site
+: 1483573571:0;top
+: 1483573608:0;exit
+: 1483577436:0;ssh josbow14@getchispa.com
+: 1483718807:0;up
+: 1483725653:0;ssh yournew.site
+: 1483748803:0;cd DOwnloads
+: 1483748806:0;cd Downloads
+: 1483748809:0;ls
+: 1483748920:0;cd 
+: 1483748921:0;ls
+: 1483748927:0;rm -f pia.sh
+: 1483748930:0;ls pal
+: 1483748933:0;ls -al
+: 1483748956:0;cd .putty
+: 1483748957:0;ls
+: 1483748960:0;cd ..
+: 1483749020:0;rm -rf .pia_manager
+: 1483749028:0;rm -rf .pia_manager_crash.log
+: 1483749030:0;exit
+: 1483749035:0;tar -xzf pia-v66-installer-linux.tar.gz && chmod +x pia-v66-installer.sh && ./pia-v66-installer.sh
+: 1483749041:0;ls
+: 1483749066:0;chmod +x pia-v66-installer-linux.sh && ./pia-v66-installer-linux.sh
+: 1483749091:0;exit
+: 1483937063:0;up
+: 1484067778:0;upo
+: 1484067780:0;up
+: 1484093600:0;ssh yournew.site
+: 1484093630:0;exit
+: 1484152820:0;up
+: 1484190805:0;ssh josbow14@prescott3d.com
+: 1484192346:0;exit
+: 1484192826:0;ssh josbow14@prescott3d.com
+: 1484241733:0;exit
+: 1484254744:0;ssh yournew.site
+: 1484254764:0;exit
+: 1484257672:0;sudo add-apt-repository ppa:openscad/releases
+: 1484257692:0;up
+: 1484257731:0;sudo apt install openscad
+: 1484257757:0;exit
+: 1484264388:0;ssh yournew.site
+: 1484265101:0;exit
+: 1484265106:0;ssh yournew.site
+: 1484266637:0;ssh josbow14@getchispa.com
+: 1484277890:0;ssh yournew.site
+: 1484287550:0;ssh josbow14@getchispa.com
+: 1484287568:0;ssh yournew.site
+: 1484287594:0;exit
+: 1484353787:0;fix
+: 1484702901:0;exit
+: 1484710446:0;ssh root@104.236.143.87
+: 1484753393:0;fix
+: 1484785523:0;up
+: 1484785557:0;sudo apt upgrade
+: 1484785600:0;exit
+: 1484851739:0;ls
+: 1484851741:0;cd dsis
+: 1484851743:0;ls -al
+: 1484851745:0;git pull
+: 1484851761:0;cd home
+: 1484851762:0;ls
+: 1484851780:0;nano dashboard.php
+: 1484851792:0;cd ..
+: 1484851793:0;ls
+: 1484851797:0;nano index.html
+: 1484852135:0;nano styles.css
+: 1484852358:0;exit
+: 1484852385:0;cd Projects/dsis
+: 1484852385:0;ls
+: 1484852387:0;ls -al
+: 1484852392:0;git status
+: 1484868359:0;exit
+: 1484868376:0;fix
+: 1484868382:0;exit
+: 1484868405:0;nano .zshrc
+: 1484868411:0;nano .zshenv
+: 1484868425:0;exit
+: 1484868809:0;ssh yournew.site
+: 1484868811:0;exit
+: 1484964772:0;fix
+: 1484964806:0;exit
+: 1485053203:0;up
+: 1485107007:0;ssh yournew.site
+: 1485107036:0;exit
+: 1485122824:0;ssh yournew.site
+: 1485123253:0;exit
+: 1485197809:0;ssh josbow14@prescott3d.com
+: 1485197839:0;exit
+: 1485198119:0;up
+: 1485198150:0;sudo apt upgrade
+: 1485198235:0;exit
+: 1485223167:0;ssh josbow14@getchispa.com
+: 1485223702:0;exit
+: 1485316869:0;fix
+: 1485458463:0;su mother
+: 1485458478:0;su -s
+: 1485458489:0;su -s mother
+: 1485458498:0;fucker
+: 1485458501:0;su -s mother
+: 1485458511:0;exit
+: 1485458574:0;cut -d: -f1 /etc/passwd
+: 1485566534:0;cd Projects/dsis
+: 1485566535:0;ls
+: 1485571054:0;exit
+: 1485806533:0;cd Projects/dsis
+: 1485806534:0;ls
+: 1485806536:0;ls -al
+: 1485806546:0;cd home
+: 1485806546:0;ls
+: 1485806549:0;ls -al
+: 1485806555:0;touch imagelog.txt
+: 1485806558:0;exit
+: 1485916427:0;ssh josbow14@bertelsenandassociates.com
+: 1485917116:0;exit
+: 1485969545:0;cd Projects/dsis
+: 1485969545:0;ls
+: 1485969555:0;git add .
+: 1485969575:0;git commit -m 'Sign verification I'
+: 1485969849:0;git push
+: 1485975121:0;up
+: 1485975156:0;sudo apt upgrde
+: 1485975159:0;sudo apt upgrade
+: 1485976180:0;cd Projects/dsis
+: 1485976182:0;git pull
+: 1485976198:0;ls
+: 1485976201:0;mkdocs
+: 1485976208:0;sudo apt install mkdocs
+: 1485976253:0;sudo apt install dolphin-emu-master
+: 1485976262:0;sudo apt -f install dolphin-emu-master
+: 1485976281:0;sudo apt -f install dolphin-emu-data-master
+: 1485976801:0;sudo apt install mkdocs
+: 1485976820:0;sudo apt update
+: 1485976843:0;sudo apt upgrade
+: 1485976859:0;sudo apt install mkdocs
+: 1485976869:0;sudo apt install python3-click
+: 1485982879:0;cd Projects/dsis
+: 1485982879:0;la
+: 1485982889:0;cd home
+: 1485982891:0;ls
+: 1485982894:0;cd sign
+: 1485982896:0;ls
+: 1485982931:0;exit
+: 1485992631:0;fix
+: 1486054074:0;ls
+: 1486054082:0;chmod 777 imagelog.txt
+: 1486054085:0;ls -al
+: 1486148379:0;fix
+: 1486350045:0;tree
+: 1486350125:0;cd Videos
+: 1486350128:0;tree
+: 1486350130:0;cd ..
+: 1486350133:0;cd DOcuments
+: 1486350136:0;cd Documents
+: 1486350137:0;tree
+: 1486427815:0;ssh josbow14@prescott3d.com
+: 1486521345:0;ssh yournew.site
+: 1486521433:0;exit
+: 1486674580:0;sudo apt update
+: 1486674613:0;sudo apt upgrade
+: 1486674633:0;exit
+: 1486743956:0;ssh josbow14@getchispa.com
+: 1486744020:0;exit
+: 1486924961:0;sudo apt install skype
+: 1487209598:0;exit
+: 1487209804:0;ssh pi@192.160.10.1
+: 1487209815:0;ssh pi@192.168.10.1
+: 1487209834:0;ssh raspberry@192.168.10.1
+: 1487209846:0;ssh raspberrypi@192.168.10.1
+: 1487209856:0;ssh 192.168.10.1 -u
+: 1487209866:0;ssh 192.168.10.1 -l
+: 1487209885:0;ssh pi@192.168.10.1
+: 1487209892:0;ssh raspberry@192.168.10.1
+: 1487460446:0;up
+: 1487460472:0;exit
+: 1487463559:0;xbacklight -dec 10
+: 1487463567:0;exit
+: 1487464468:0;git reflog
+: 1487464477:0;exit
+: 1487464490:0;git reflog
+: 1487527232:0;up
+: 1487540708:0;minecraft.jar
+: 1487540719:0;java minecraft.jar
+: 1487540780:0;cd Documents
+: 1487540787:0;apt search openjdk
+: 1487540824:0;sudo apt install openjdk-9-jre
+: 1487540974:0;exit
+: 1487541750:0;sudo apt install minetest
+: 1487560401:0;top
+: 1487560415:0;kill 9372
+: 1487560423:0;kill -SIGTERM 9372
+: 1487560428:0;kill -h
+: 1487560452:0;ps 9372
+: 1487560463:0;kill -l
+: 1487560477:0;kill -TERM 9372
+: 1487560480:0;kill -TERM
+: 1487560487:0;kill --TERM
+: 1487560502:0;ps -h
+: 1487560515:0;exit
+: 1487561258:0;ps
+: 1487561261:0;top
+: 1487561275:0;kill 9 9372
+: 1487561278:0;kill -9 9372
+: 1487564504:0;nano Desktop/bulb.svg
+: 1487564509:0;exit
+: 1487631342:0;cd Dwnloads
+: 1487631351:0;cd Downloads
+: 1487631352:0;ls
+: 1487631421:0;tar -xzf pia-v68-installer-linux.tar.gz
+: 1487631430:0;ls
+: 1487631441:0;./pia-v68-installer-linux.sh
+: 1487644198:0;cat .zshrc
+: 1487644205:0;cat .zshenv
+: 1487644216:0;exit
+: 1487644555:0;ls
+: 1487644560:0;cd chromebook_keyboard_backlight_driver
+: 1487644561:0;ls
+: 1487644565:0;make
+: 1487644656:0;cp chromeos_keyboard_leds.ko chromebook_kb_backlight.ko /lib/modules/`uname -r`/kernel/drivers/platform/chrome/
+: 1487644663:0;sudo cp chromeos_keyboard_leds.ko chromebook_kb_backlight.ko /lib/modules/`uname -r`/kernel/drivers/platform/chrome/
+: 1487644678:0;sudo depmod -a
+: 1487644700:0;sudo insmod chromeos_keyboard_leds.ko
+: 1487644723:0;ps
+: 1487644726:0;sudo insmod chromeos_keyboard_leds.ko
+: 1487644750:0;sudo insmod chromebook_kb_backlight.ko
+: 1487644753:0;sudo insmod chromeos_keyboard_leds.ko
+: 1487644820:0;sudo cp keyboard_brightness /usr/local/bin
+: 1487644841:0;sudo chmod u+s /usr/local/bin/keyboard_brightness
+: 1487644850:0;sudo insmod chromeos_keyboard_leds.ko
+: 1487645032:0;keyboard_brightness up
+: 1487645043:0;exit
+: 1487694586:0;up
+: 1487808321:0;nano .zshrc
+: 1487808521:0;nano .zhistory
+: 1487808532:0;nano .zsh_history
+: 1487808587:0;cp .zsh_history ~/Desktop/zsh_history
