@@ -51,7 +51,7 @@ def handler(inp,out):
 
             # if you just had a regular command and this is a regular command then new line
             elif prev_flag is True and flag is True:
-                output.write('\n')
+                output.write(',normal\n')
                 output.write(line.rstrip() + ' ')
 
             # if you just had a regular command and this is either a pipe or arg then hold up
@@ -62,7 +62,7 @@ def handler(inp,out):
 
             # if you just had an arg and this is a regular command then new line
             elif prev_arg_flag is True and flag is True:
-                output.write('\n')
+                output.write(',normal\n')
                 output.write(line.rstrip() + ' ')
 
             # if you just had an arg and this is a pipe or an arg then hold up
