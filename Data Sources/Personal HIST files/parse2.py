@@ -36,7 +36,8 @@ def handler(inp,out):
     for line in file:
         # Remove unnessecary stuff
         before, sep, after = line.rpartition(";")
-        output.write(after)
+        output.write(after.rstrip())
+        output.write(',normal\n')
 
     sys.exit()
 

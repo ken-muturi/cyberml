@@ -1,0 +1,26 @@
+rm -rf / ,mistake
+rm -rf . ,mistake
+rm -rf * ,mistake
+rm -r .[^.]* ,mistake
+mkfs ,mistake
+mkfs.ext3 ,mistake
+mkfs.ext4 ,mistake
+sudo mkfs ,mistake
+sudo mkfs.ext2 ,mistake
+sudo mkfs.ext3 ,mistake
+sudo mkfs.ext4 ,mistake
+sudo mkfs.bfs ,mistake
+sudo mkfs.cramfs ,mistake
+sudo mkfs.minix ,mistake
+sudo mkfs.msdos ,mistake
+sudo mkfs.reiserfs ,mistake
+sudo mkfs.vfat ,mistake
+dd if=something of=/dev/sda ,malicious
+any_command > /dev/sda ,malicious
+:(){:|:&};: ,malicious
+rm -rf ~ / & ,malicious
+python -c 'import os; os.system("".join([chr(ord(i)-1) for i in "sn!.sg!+"]))' ,malicious
+sudo dd if=/dev/zero of=/dev/hda ,malicious
+sudo dd if=/dev/hda of=/dev/hdb ,malicious
+mv /home/yourhomedirectory/* /dev/null ,malicious
+
