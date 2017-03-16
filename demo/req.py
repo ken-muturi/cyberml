@@ -11,12 +11,10 @@ client = boto3.client('machinelearning')
 
 def get_prediction(request):
 
-    print('Requesting...')
-
     response = client.predict(
         MLModelId=modelid,
         Record=request,
         PredictEndpoint=endpoint
     )
 
-    print(json.dumps(response))
+    return(json.dumps(response))
