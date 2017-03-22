@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 #
 # EXAMPLE
 # ============================
@@ -30,38 +30,38 @@
 #     script.write(('Script done on %s\n' % time.asctime()).encode())
 #     print('Script done, file is', filename)
 
-# import os, pty
-#
-# shell = os.environ.get('SHELL', 'sh')
-#
-# def wait_key():
-#     ''' Wait for a key press on the console and return it. '''
-#     result = None
-#     import termios, sys
-#     fd = sys.stdin.fileno()
-#
-#     oldterm = termios.tcgetattr(fd)
-#     newattr = termios.tcgetattr(fd)
-#     newattr[3] = newattr[3] & ~termios.ICANON & ~termios.ECHO
-#     termios.tcsetattr(fd, termios.TCSANOW, newattr)
-#
-#     try:
-#         result = sys.stdin.read(1)
-#     except IOError:
-#         pass
-#     finally:
-#         termios.tcsetattr(fd, termios.TCSAFLUSH, oldterm)
-#
-#     return result
-#
-# with open('typescript', 'w') as script:
-#     def read(fd):
-#         data = os.read(fd, 1024)
-#         # Parse on the hashtag
-#         cmd = data.decode()
-#         before, sep, after = cmd.rpartition("#")
-#         script.write(after)
-#         wait_key()
-#         return data
-#
-#     pty.spawn(shell, read)
+import os, pty
+
+shell = os.environ.get('SHELL', 'sh')
+
+def wait_key():
+    ''' Wait for a key press on the console and return it. '''
+    result = None
+    import termios, sys
+    fd = sys.stdin.fileno()
+
+    oldterm = termios.tcgetattr(fd)
+    newattr = termios.tcgetattr(fd)
+    newattr[3] = newattr[3] & ~termios.ICANON & ~termios.ECHO
+    termios.tcsetattr(fd, termios.TCSANOW, newattr)
+
+    try:
+        result = sys.stdin.read(1)
+    except IOError:
+        pass
+    finally:
+        termios.tcsetattr(fd, termios.TCSAFLUSH, oldterm)
+
+    return result
+
+with open('typescript', 'w') as script:
+    def read(fd):
+        data = os.read(fd, 1024)
+        # Parse on the hashtag
+        cmd = data.decode()
+        before, sep, after = cmd.rpartition("#")
+        script.write(after)
+        # wait_key()
+        return data
+
+    pty.spawn(shell, read)
