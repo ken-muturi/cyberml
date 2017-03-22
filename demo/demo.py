@@ -51,13 +51,22 @@ def get_input():
 
 def evaluate(command):
 
+    # Get prediction from AWS-ML
     prd = get_prediction(command)
-    print(json.dumps(prd, sort_keys=True, indent=4))
-    sys.exit(0)
-    # - somehow parse the JSON
-    # - figure out how to determine where it fits
-    #   in the 1 to 0 scale of bueno to no bueno
-    # - return to sender
+    
+    # Make results understandbale
+    results = json.loads(prd)
+    malicious = results['Prediction']['predictedScores']['malicious']
+    mistake = results['Prediction']['predictedScores']['mistake']
+    normal = results['Prediction']['predictedScores']['normal']
+    
+    # TODO add logic that makes sense and some actual calculations
+    # if malicious >= 0.2:
+    #     evaluation = 0.1
+    # if mistake >= 0.2:
+    #     evaluation = 0.6
+    # if normal >= 0.95:
+    #     evaluation = 0.9
 
     # number for testing
     evaluation = 0.9
@@ -95,7 +104,6 @@ except:
     # TODO need to capture and handle specific exceptions
     print("\nOh no! An error has occured!")
     raise
-    sys.exit(1)
 
 else:
     # If no exceptions, make a clean getaway
