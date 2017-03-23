@@ -3,7 +3,7 @@
 # Created by Joshua Bowen as a part of a NAU sponsered research project.
 # No License, as-is, use as you wish. 3/21/2017
 
-import boto3, json, os, subprocess, sys
+import boto3, json, os, subprocess, sys, datetime
 
 # Set up Amazon Web Services connection
 client = boto3.client('machinelearning')
@@ -49,6 +49,9 @@ def get_prediction(request):
 
     return response
 
+def log(command, evaluation):
+    with open('.logfile','a') as f:
+        f.write(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "," + str(command) + "," + str(evaluation) + "\n")
 
 def evaluate(command):
 
@@ -69,8 +72,8 @@ def evaluate(command):
         evaluation = 0.9
     else:
         # for testing purposes
-        print("\nValue out of bounds:\n" + str(malicious) + "\n" + str(mistake) + "\n" + str(normal) + "\n")
-        evaluation = 0
+        # print("\nValue out of bounds:\n" + str(malicious) + "\n" + str(mistake) + "\n" + str(normal) + "\n")
+        evaluation = 0.6
 
     return evaluation
 
@@ -81,6 +84,9 @@ try:
 
         # Send input for evaluation
         ev = evaluate(com)
+
+        # Log it!
+        log(com,ev)
 
     # Decide what to do based on evaluation
         # if good, allow command
@@ -97,9 +103,10 @@ try:
             sys.exit(1)
 
 except KeyboardInterrupt:
-    # TODO for high fidelity tests, do not allow keyboard interrups
-    print("\nProgram Terminated by " + username)
-    sys.exit(0)
+    # For high fidelity tests, do not allow keyboard interrups
+    # print("\nProgram Terminated by " + username)
+    # sys.exit(0)
+    pass
 
 except SystemExit:
     pass

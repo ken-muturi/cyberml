@@ -1,0 +1,28 @@
+1. Brdiczka O, Juan Liu, Price B, et al. Proactive insider threat detection through graph learning and psychological context. spw. 2012:142-149. http://ieeexplore.ieee.org.libproxy.nau.edu/document/6227698. doi: 10.1109/SPW.2012.29.
+
+2. Rashid T, Agrafiotis I, Nurse J. A new take on detecting insider threats. Proceedings of the 8th ACM CCS International Workshop on managing insider security threats. Oct 28, 2016:47-56. http://dl.acm.org.libproxy.nau.edu/citation.cfm?id=2995964. doi: 10.1145/2995959.2995964.
+
+3. Parveen P, Weger ZR, Thuraisingham B, Hamlen K, Khan L. Supervised learning for insider threat detection using stream mining. ICTAI. 2011:1032-1039. http://ieeexplore.ieee.org.libproxy.nau.edu/document/6103467. doi: 10.1109/ICTAI.2011.176.
+
+4. Eldardiry H, Bart E, Juan Liu, Hanley J, Price B, Brdiczka O. Multi-domain information fusion for insider threat detection. spw. 2013:45-51. http://ieeexplore.ieee.org.libproxy.nau.edu/document/6565228. doi: 10.1109/SPW.2013.14.
+
+5. Probst CW, Bishop M, Gollmann D, Hunker JA. Insider threats in cyber security. Vol 49. Boston: Springer Science+Business Media; 2010. http://lib.myilibrary.com.libproxy.nau.edu?ID=790801.
+6. Maybury M, Chase P, Cheikes B, et al. Analysis and detection of malicious insiders. . 2005. http://www.dtic.mil/docs/citations/ADA456356.
+
+7. Greengard S. Cybersecurity gets smart. Communications of the ACM. 2016;59(5):29-31. http://dl.acm.org.libproxy.nau.edu/citation.cfm?id=2898969. doi: 10.1145/2898969.
+
+8. Rash W. 'Deep learning' technology sees through security software blind spots. eWeek. 2015:1.
+
+9. Preimesberger C. Eight tactics for circumventing insider security threats. eWeek. 2015:1.
+
+10. Hackers offering money to company insiders in return for confidential data. The Hacker News. 
+
+11. Sinno Jialin Pan, Qiang Yang. A survey on transfer learning. TKDE. 2010;22(10):1345-1359. http://ieeexplore.ieee.org.libproxy.nau.edu/document/5288526. doi: 10.1109/TKDE.2009.191.
+
+12. Rick Dana Barlow. Grand theft data. Health Management Technology. 2014;35(2):8. http://search.proquest.com.libproxy.nau.edu/docview/1542396962.
+
+13. M. Schonlau, W. DuMouchel, et. al. Computer Intrusion: Detecting masquerades. Statistical Science 2001;16(1):58-74. 
+
+14. Maxion RA, Townsend TN. Masquerade detection augmented with error analysis. TR. 2004;53(1):124-147. http://ieeexplore.ieee.org/document/1282170. doi: 10.1109/TR.2004.824828.
+
+
