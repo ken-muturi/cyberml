@@ -17,20 +17,6 @@ wdir = os.environ.get('PWD')
 modelid = 'ml-lttAZ5X4uU8'
 endpoint = 'https://realtime.machinelearning.us-east-1.amazonaws.com'
 
-def get_prediction(request):
-
-    # Correctly format request
-    request = {"Var1":str(request)}
-
-    # Send JSON-formatted request
-    response = client.predict(
-        MLModelId=modelid,
-        Record=request,
-        PredictEndpoint=endpoint
-    )
-
-    return response
-
 def get_input():
 
     # Update username, hostname, and working dir from terminal
@@ -49,27 +35,42 @@ def get_input():
 
     return cmds
 
+def get_prediction(request):
+
+    # Correctly format request
+    request = {"Var1":str(request)}
+
+    # Send JSON-formatted request
+    response = client.predict(
+        MLModelId=modelid,
+        Record=request,
+        PredictEndpoint=endpoint
+    )
+
+    return response
+
+
 def evaluate(command):
 
     # Get prediction from AWS-ML
-    prd = get_prediction(command)
-    
+    results = get_prediction(command)
+
     # Make results understandbale
-    results = json.loads(prd)
     malicious = results['Prediction']['predictedScores']['malicious']
     mistake = results['Prediction']['predictedScores']['mistake']
     normal = results['Prediction']['predictedScores']['normal']
-    
-    # TODO add logic that makes sense and some actual calculations
-    # if malicious >= 0.2:
-    #     evaluation = 0.1
-    # if mistake >= 0.2:
-    #     evaluation = 0.6
-    # if normal >= 0.95:
-    #     evaluation = 0.9
 
-    # number for testing
-    evaluation = 0.9
+    # TODO add logic that makes sense and some actual calculations
+    if malicious >= 0.2:
+        evaluation = 0.1
+    elif mistake >= 0.1:
+        evaluation = 0.6
+    elif normal >= 0.95:
+        evaluation = 0.9
+    else:
+        # for testing purposes
+        print("\nValue out of bounds:\n" + str(malicious) + "\n" + str(mistake) + "\n" + str(normal) + "\n")
+        evaluation = 0
 
     return evaluation
 
@@ -99,6 +100,9 @@ except KeyboardInterrupt:
     # TODO for high fidelity tests, do not allow keyboard interrups
     print("\nProgram Terminated by " + username)
     sys.exit(0)
+
+except SystemExit:
+    pass
 
 except:
     # TODO need to capture and handle specific exceptions
