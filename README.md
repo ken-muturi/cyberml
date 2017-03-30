@@ -14,13 +14,13 @@ accurately predict insider threats in a server environment.
 + The Northern Arizona University Undergraduate Symposium - April 28, 2017
 
 ### Acknowledgements
-Faculty Advisor - James A. Subach, Ph. D
-Academic Credit Advisor - Nancy L. Jensen
-Code Help - Ian Harvey on Stack Overflow
-Data Sources - Purdue University
-Poster Template - Felix Breuer
-The NAU Cyber Security Team
-The Embry-Riddle [Ethical] Hackers Club
-Amazon Web Services
-Font Awesome
-GitHub
+Faculty Advisor - James A. Subach, Ph. D  
+Academic Credit Advisor - Nancy L. Jensen  
+Code Help - Ian Harvey on Stack Overflow  
+Data Sources - Purdue University  
+Poster Template - Felix Breuer  
+The NAU Cyber Security Team  
+The Embry-Riddle [Ethical] Hackers Club  
+Amazon Web Services  
+Font Awesome  
+GitHub  
