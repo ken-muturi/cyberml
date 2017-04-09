@@ -1,0 +1,9 @@
+commands: history, script, mkfifo
+
+DONE - find a keylogger: ~/Desktop/rusty/keylogger
+
+find a way to see what pid/app/exe is being typed in
+
+write a daemon that logs session timing
+
+NAU InfoSec -> look at system calls

@@ -3,7 +3,7 @@
 # Created by Joshua Bowen as a part of a NAU sponsered research project.
 # No License, as-is, use as you wish. 3/21/2017
 
-import boto3, json, os, subprocess, sys, datetime
+import boto3, json, os, subprocess, sys, datetime, timeit
 
 # Set up Amazon Web Services connection
 client = boto3.client('machinelearning')
@@ -71,36 +71,42 @@ def evaluate(command):
     elif normal >= 0.95:
         evaluation = 0.9
     else:
-        # for testing purposes
-        # print("\nValue out of bounds:\n" + str(malicious) + "\n" + str(mistake) + "\n" + str(normal) + "\n")
-        evaluation = 0.6
+        for testing purposes
+        print("\nValue out of bounds:\n" + str(malicious) + "\n" + str(mistake) + "\n" + str(normal) + "\n")
+        evaluation = 0.9
 
     return evaluation
 
-try:
-    while 2+2 == 4:
-        # Get user input
-        com = get_input()
+def main():
+    # Get user input
+    com = get_input()
 
-        # Send input for evaluation
-        ev = evaluate(com)
+    # Send input for evaluation
+    ev = evaluate(com)
 
-        # Log it!
-        log(com,ev)
+    # Log it!
+    log(com,ev)
 
     # Decide what to do based on evaluation
-        # if good, allow command
-        if ev > 0.75:
-            os.system(com)
+    # if good, allow command
+    if ev > 0.75:
+        os.system(com)
 
-        # if mistake, do not execute command
-        elif ev <= 0.75 and ev >= 0.25:
-            print('\nI think your command may be or contain a mistake, please try agian.')
+    # if mistake, do not execute command
+    elif ev <= 0.75 and ev >= 0.25:
+        print('\nI think your command may be or contain a mistake, please try agian.')
 
-        # if determined malicious, stop session
-        elif ev < 0.25 and ev >= 0:
-            print('\nIntruder detected!')
-            sys.exit(1)
+    # if determined malicious, stop session
+    elif ev < 0.25 and ev >= 0:
+        print('\nIntruder detected!')
+        sys.exit(1)
+
+try:
+    while True:
+        main()
+
+    # print(timeit.timeit(stmt='main()', setup='from __main__ import main', number=1, globals=None))
+    # print(timeit.timeit(stmt="os.system('ls')", setup="import os", number=1))
 
 except KeyboardInterrupt:
     # For high fidelity tests, do not allow keyboard interrups
